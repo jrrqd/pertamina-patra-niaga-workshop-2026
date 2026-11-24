@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .obsidian/
 .venv/
+node_modules/
+presentation-app/node_modules/
+presentation-app/dist/
+.DS_Store
