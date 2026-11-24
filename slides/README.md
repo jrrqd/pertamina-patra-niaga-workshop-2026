@@ -31,7 +31,8 @@ for our team (private/team access). Return the live URL.
 
 Setelah publish, tempel URL di bawah:
 
-- **Live App URL:** _(belum dipublish dari cloud agent — jalankan prompt di atas)_
+- **Live App URL:** _(belum dipublish — setelah `git push` Origin berhasil, jalankan prompt cloud agent di atas dari Cursor)_
+- Preview lokal: `cd presentation-app && npm install && npm run dev` (build `npm run build` sudah diverifikasi)
 
 Lokal preview:
 

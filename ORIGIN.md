@@ -10,15 +10,16 @@ Workshop ini **tidak memakai GitHub**.
 | visibility | private |
 | cloneUrl | `https://origin.cursor.com/rizki/pertamina-patra-niaga-workshop-2026.git` |
 
-## Push isi lokal (fasilitator)
+## Status push
+
+Repo Origin sudah dibuat (kosong di remote). Commit lokal sudah siap di mesin fasilitator (`main`).  
+`git push` dari agen gagal karena prompt kredensial HTTPS Origin (`could not read Username for https://origin.cursor.com`).
+
+**Fasilitator:** dari Cursor desktop yang sudah login ke akun yang sama, buka Source Control → Push ke `origin`, atau jalankan:
 
 ```bash
 cd "/Users/rizkisuluhadi/Documents/+personal projects/2026 pertamina patra niaga training"
-git init
-git add .
-git commit -m "Workshop template Fungsi Marketing agentic AI 27 Nov"
-git branch -M main
-git remote add origin https://origin.cursor.com/rizki/pertamina-patra-niaga-workshop-2026.git
+git remote -v   # harus menunjuk origin.cursor.com/rizki/pertamina-patra-niaga-workshop-2026.git
 git push -u origin main
 ```
 
