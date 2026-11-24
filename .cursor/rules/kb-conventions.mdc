@@ -1,0 +1,13 @@
+---
+description: Konvensi knowledge base, command center, dan approval untuk grokbot workshop
+alwaysApply: true
+---
+
+Ikuti AGENTS.md.
+
+- Hanya CoS MRP yang menulis knowledge base bersama dan `knowledge-base/command-center.md`.
+- Sub-fungsi lain membaca KB dan command center, menulis draf di foldernya, lalu mengirim laporan status ke MRP.
+- Tulis file dengan frontmatter `dept`, `status`, `owner`, `date`, `tags`.
+- Sebut path sumber. Jangan menyalin SOP.
+- Status `approved` hanya setelah manusia menyetujui dan tercatat di `knowledge-base/decisions/`.
+- Data mock fiktif. Sebut id baris saat mengklaim temuan. Jangan mengarang angka di luar file.

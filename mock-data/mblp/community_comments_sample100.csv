@@ -1,0 +1,101 @@
+comment_id,post_id,date,account,author,text
+C00001,P00004,2026-08-02,@pertamaxseries.id,Andi Lestari,Promo weekend membantu.
+C00002,P00007,2026-08-03,@brightgas,Fajar Halim,Event SPBU seru.
+C00003,P00010,2026-08-04,@SPBUPertamina,Lina Nugroho,Poin masuk cepat.
+C00004,P00013,2026-08-05,@dexseriesid,Maya Santoso,Promo weekend membantu.
+C00005,P00016,2026-08-06,@mypertamina,Raka Halim,Event SPBU seru.
+C00006,P00019,2026-08-07,@pertamaxseries.id,Lina Halim,Poin saya belum masuk.
+C00007,P00022,2026-08-08,@brightgas,Sari Lestari,Grading member membingungkan.
+C00008,P00025,2026-08-09,@SPBUPertamina,Agus Halim,Stok Bright Gas di SPBU kosong.
+C00009,P00028,2026-08-10,@dexseriesid,Dewi Halim,DM investasi cepat!!!
+C00010,P00031,2026-08-11,@mypertamina,Raka Wijaya,Promo weekend membantu.
+C00011,P00034,2026-08-12,@pertamaxseries.id,Budi Nugroho,Event SPBU seru.
+C00012,P00037,2026-08-13,@brightgas,Lina Halim,Poin masuk cepat.
+C00013,P00040,2026-08-14,@SPBUPertamina,Budi Saputra,Promo weekend membantu.
+C00014,P00043,2026-08-15,@dexseriesid,Putri Pratama,Event SPBU seru.
+C00015,P00046,2026-08-16,@mypertamina,Putri Kusuma,Poin masuk cepat.
+C00016,P00049,2026-08-17,@pertamaxseries.id,Andi Kusuma,Grading member membingungkan.
+C00017,P00052,2026-08-18,@brightgas,Andi Halim,Stok Bright Gas di SPBU kosong.
+C00018,P00055,2026-08-19,@SPBUPertamina,Raka Halim,Poin saya belum masuk.
+C00019,P00058,2026-08-20,@dexseriesid,Fajar Kusuma,DM investasi cepat!!!
+C00020,P00061,2026-08-21,@mypertamina,Raka Nugroho,Event SPBU seru.
+C00021,P00064,2026-08-22,@pertamaxseries.id,Sari Nugroho,Poin masuk cepat.
+C00022,P00067,2026-08-23,@brightgas,Putri Santoso,Promo weekend membantu.
+C00023,P00070,2026-08-24,@SPBUPertamina,Fajar Lestari,Event SPBU seru.
+C00024,P00073,2026-08-25,@dexseriesid,Lina Nugroho,Poin masuk cepat.
+C00025,P00076,2026-08-26,@mypertamina,Raka Lestari,Promo weekend membantu.
+C00026,P00079,2026-08-27,@pertamaxseries.id,Andi Wijaya,Stok Bright Gas di SPBU kosong.
+C00027,P00082,2026-08-28,@brightgas,Putri Lestari,Poin saya belum masuk.
+C00028,P00085,2026-08-29,@SPBUPertamina,Budi Saputra,Grading member membingungkan.
+C00029,P00088,2026-08-30,@dexseriesid,Agus Pratama,DM investasi cepat!!!
+C00030,P00091,2026-08-31,@mypertamina,Putri Santoso,Poin masuk cepat.
+C00031,P00094,2026-09-01,@pertamaxseries.id,Sari Saputra,Promo weekend membantu.
+C00032,P00097,2026-09-02,@brightgas,Andi Pratama,Event SPBU seru.
+C00033,P00100,2026-09-03,@SPBUPertamina,Budi Halim,Poin masuk cepat.
+C00034,P00103,2026-09-04,@dexseriesid,Dewi Lestari,Promo weekend membantu.
+C00035,P00106,2026-09-05,@mypertamina,Lina Wijaya,Event SPBU seru.
+C00036,P00109,2026-09-06,@pertamaxseries.id,Raka Halim,Poin saya belum masuk.
+C00037,P00112,2026-09-07,@brightgas,Fajar Lestari,Grading member membingungkan.
+C00038,P00115,2026-09-08,@SPBUPertamina,Andi Halim,Stok Bright Gas di SPBU kosong.
+C00039,P00118,2026-09-09,@dexseriesid,Fajar Halim,DM investasi cepat!!!
+C00040,P00121,2026-09-10,@mypertamina,Maya Pratama,Promo weekend membantu.
+C00041,P00124,2026-09-11,@pertamaxseries.id,Agus Wijaya,Event SPBU seru.
+C00042,P00127,2026-09-12,@brightgas,Putri Pratama,"Nomor saya 0812-9999-0001, tolong hubungi soal data KTP."
+C00043,P00130,2026-09-13,@SPBUPertamina,Fajar Kusuma,Promo weekend membantu.
+C00044,P00133,2026-09-14,@dexseriesid,Budi Nugroho,Event SPBU seru.
+C00045,P00136,2026-09-15,@mypertamina,Agus Pratama,Poin masuk cepat.
+C00046,P00139,2026-09-16,@pertamaxseries.id,Budi Santoso,Grading member membingungkan.
+C00047,P00142,2026-09-17,@brightgas,Fajar Pratama,Stok Bright Gas di SPBU kosong.
+C00048,P00145,2026-09-18,@SPBUPertamina,Budi Lestari,Poin saya belum masuk.
+C00049,P00148,2026-09-19,@dexseriesid,Fajar Santoso,DM investasi cepat!!!
+C00050,P00151,2026-09-20,@mypertamina,Maya Pratama,Event SPBU seru.
+C00051,P00154,2026-09-21,@pertamaxseries.id,Andi Santoso,Poin masuk cepat.
+C00052,P00157,2026-09-22,@brightgas,Maya Pratama,Promo weekend membantu.
+C00053,P00160,2026-09-23,@SPBUPertamina,Putri Pratama,Event SPBU seru.
+C00054,P00163,2026-09-24,@dexseriesid,Sari Santoso,Poin masuk cepat.
+C00055,P00166,2026-09-25,@mypertamina,Maya Halim,Promo weekend membantu.
+C00056,P00169,2026-09-26,@pertamaxseries.id,Andi Kusuma,Stok Bright Gas di SPBU kosong.
+C00057,P00172,2026-09-27,@brightgas,Putri Halim,Poin saya belum masuk.
+C00058,P00175,2026-09-28,@SPBUPertamina,Lina Wijaya,Grading member membingungkan.
+C00059,P00178,2026-09-29,@dexseriesid,Dewi Santoso,DM investasi cepat!!!
+C00060,P00181,2026-09-30,@mypertamina,Andi Lestari,Poin masuk cepat.
+C00061,P00184,2026-10-01,@pertamaxseries.id,Maya Pratama,Promo weekend membantu.
+C00062,P00187,2026-10-02,@brightgas,Maya Santoso,Event SPBU seru.
+C00063,P00190,2026-10-03,@SPBUPertamina,Andi Nugroho,Poin masuk cepat.
+C00064,P00193,2026-10-04,@dexseriesid,Sari Santoso,Promo weekend membantu.
+C00065,P00196,2026-10-05,@mypertamina,Budi Pratama,Event SPBU seru.
+C00066,P00199,2026-10-06,@pertamaxseries.id,Andi Lestari,Poin saya belum masuk.
+C00067,P00202,2026-10-07,@brightgas,Maya Pratama,Grading member membingungkan.
+C00068,P00205,2026-10-08,@SPBUPertamina,Putri Lestari,Stok Bright Gas di SPBU kosong.
+C00069,P00208,2026-10-09,@dexseriesid,Maya Kusuma,DM investasi cepat!!!
+C00070,P00211,2026-10-10,@mypertamina,Putri Halim,Promo weekend membantu.
+C00071,P00214,2026-10-11,@pertamaxseries.id,Dewi Pratama,Event SPBU seru.
+C00072,P00217,2026-10-12,@brightgas,Agus Santoso,Poin masuk cepat.
+C00073,P00220,2026-10-13,@SPBUPertamina,Dewi Pratama,Promo weekend membantu.
+C00074,P00223,2026-10-14,@dexseriesid,Andi Halim,Event SPBU seru.
+C00075,P00226,2026-10-15,@mypertamina,Budi Santoso,Poin masuk cepat.
+C00076,P00229,2026-10-16,@pertamaxseries.id,Lina Lestari,Grading member membingungkan.
+C00077,P00232,2026-10-17,@brightgas,Budi Santoso,Stok Bright Gas di SPBU kosong.
+C00078,P00235,2026-10-18,@SPBUPertamina,Dewi Lestari,Poin saya belum masuk.
+C00079,P00238,2026-10-19,@dexseriesid,Fajar Wijaya,DM investasi cepat!!!
+C00080,P00241,2026-10-20,@mypertamina,Lina Wijaya,Event SPBU seru.
+C00081,P00244,2026-10-21,@pertamaxseries.id,Putri Santoso,Poin masuk cepat.
+C00082,P00247,2026-10-22,@brightgas,Agus Nugroho,Promo weekend membantu.
+C00083,P00250,2026-10-23,@SPBUPertamina,Andi Halim,Event SPBU seru.
+C00084,P00253,2026-10-24,@dexseriesid,Agus Santoso,Poin masuk cepat.
+C00085,P00256,2026-10-25,@mypertamina,Fajar Nugroho,Promo weekend membantu.
+C00086,P00259,2026-10-26,@pertamaxseries.id,Maya Pratama,Stok Bright Gas di SPBU kosong.
+C00087,P00262,2026-10-27,@brightgas,Budi Nugroho,Poin saya belum masuk.
+C00088,P00265,2026-10-28,@SPBUPertamina,Sari Nugroho,Grading member membingungkan.
+C00089,P00268,2026-10-29,@dexseriesid,Sari Pratama,DM investasi cepat!!!
+C00090,P00271,2026-08-01,@mypertamina,Andi Saputra,Poin masuk cepat.
+C00091,P00274,2026-08-02,@pertamaxseries.id,Agus Santoso,Promo weekend membantu.
+C00092,P00277,2026-08-03,@brightgas,Budi Lestari,Event SPBU seru.
+C00093,P00280,2026-08-04,@SPBUPertamina,Raka Halim,Poin masuk cepat.
+C00094,P00283,2026-08-05,@dexseriesid,Sari Wijaya,Promo weekend membantu.
+C00095,P00286,2026-08-06,@mypertamina,Lina Wijaya,Event SPBU seru.
+C00096,P00289,2026-08-07,@pertamaxseries.id,Putri Santoso,Poin saya belum masuk.
+C00097,P00292,2026-08-08,@brightgas,Dewi Saputra,Grading member membingungkan.
+C00098,P00295,2026-08-09,@SPBUPertamina,Raka Lestari,Stok Bright Gas di SPBU kosong.
+C00099,P00298,2026-08-10,@dexseriesid,Dewi Lestari,DM investasi cepat!!!
+C00100,P00301,2026-08-11,@mypertamina,Andi Nugroho,Promo weekend membantu.

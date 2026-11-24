@@ -1,0 +1,101 @@
+date,city,product,own_source,own_price_idr,competitor,competitor_price_idr,source_type
+2026-08-01,Jakarta,Pertamax,own_fictional,13627,RivalEnergi,12928,fictional_osint_pack
+2026-08-01,Jakarta,Pertamax,own_fictional,13627,MitraGas Nusantara,12751,fictional_osint_pack
+2026-08-01,Jakarta,Pertamax,own_fictional,13627,BlueFlame Retail,14218,fictional_osint_pack
+2026-08-01,Jakarta,Pertamax,own_fictional,13627,CityPump Co,13263,fictional_osint_pack
+2026-08-01,Jakarta,Pertamax Turbo,own_fictional,15425,RivalEnergi,15157,fictional_osint_pack
+2026-08-01,Jakarta,Pertamax Turbo,own_fictional,15425,MitraGas Nusantara,14985,fictional_osint_pack
+2026-08-01,Jakarta,Pertamax Turbo,own_fictional,15425,BlueFlame Retail,16208,fictional_osint_pack
+2026-08-01,Jakarta,Pertamax Turbo,own_fictional,15425,CityPump Co,14909,fictional_osint_pack
+2026-08-01,Jakarta,Dexlite,own_fictional,14646,RivalEnergi,15216,fictional_osint_pack
+2026-08-01,Jakarta,Dexlite,own_fictional,14646,MitraGas Nusantara,15527,fictional_osint_pack
+2026-08-01,Jakarta,Dexlite,own_fictional,14646,BlueFlame Retail,14816,fictional_osint_pack
+2026-08-01,Jakarta,Dexlite,own_fictional,14646,CityPump Co,13878,fictional_osint_pack
+2026-08-01,Jakarta,Pertamina Dex,own_fictional,16102,RivalEnergi,16064,fictional_osint_pack
+2026-08-01,Jakarta,Pertamina Dex,own_fictional,16102,MitraGas Nusantara,15265,fictional_osint_pack
+2026-08-01,Jakarta,Pertamina Dex,own_fictional,16102,BlueFlame Retail,15261,fictional_osint_pack
+2026-08-01,Jakarta,Pertamina Dex,own_fictional,16102,CityPump Co,15391,fictional_osint_pack
+2026-08-01,Jakarta,Bright Gas 5.5kg,own_fictional,90911,RivalEnergi,90676,fictional_osint_pack
+2026-08-01,Jakarta,Bright Gas 5.5kg,own_fictional,90911,MitraGas Nusantara,91234,fictional_osint_pack
+2026-08-01,Jakarta,Bright Gas 5.5kg,own_fictional,90911,BlueFlame Retail,91432,fictional_osint_pack
+2026-08-01,Jakarta,Bright Gas 5.5kg,own_fictional,90911,CityPump Co,90254,fictional_osint_pack
+2026-08-01,Jakarta,Bright Gas 12kg,own_fictional,192087,RivalEnergi,191607,fictional_osint_pack
+2026-08-01,Jakarta,Bright Gas 12kg,own_fictional,192087,MitraGas Nusantara,192666,fictional_osint_pack
+2026-08-01,Jakarta,Bright Gas 12kg,own_fictional,192087,BlueFlame Retail,192530,fictional_osint_pack
+2026-08-01,Jakarta,Bright Gas 12kg,own_fictional,192087,CityPump Co,192636,fictional_osint_pack
+2026-08-01,Jakarta,LPG NPSO 12kg,own_fictional,185079,RivalEnergi,185059,fictional_osint_pack
+2026-08-01,Jakarta,LPG NPSO 12kg,own_fictional,185079,MitraGas Nusantara,184651,fictional_osint_pack
+2026-08-01,Jakarta,LPG NPSO 12kg,own_fictional,185079,BlueFlame Retail,185119,fictional_osint_pack
+2026-08-01,Jakarta,LPG NPSO 12kg,own_fictional,185079,CityPump Co,185406,fictional_osint_pack
+2026-08-01,Surabaya,Pertamax,own_fictional,13442,RivalEnergi,14357,fictional_osint_pack
+2026-08-01,Surabaya,Pertamax,own_fictional,13442,MitraGas Nusantara,14480,fictional_osint_pack
+2026-08-01,Surabaya,Pertamax,own_fictional,13442,BlueFlame Retail,12713,fictional_osint_pack
+2026-08-01,Surabaya,Pertamax,own_fictional,13442,CityPump Co,14254,fictional_osint_pack
+2026-08-01,Surabaya,Pertamax Turbo,own_fictional,15712,RivalEnergi,15026,fictional_osint_pack
+2026-08-01,Surabaya,Pertamax Turbo,own_fictional,15712,MitraGas Nusantara,16129,fictional_osint_pack
+2026-08-01,Surabaya,Pertamax Turbo,own_fictional,15712,BlueFlame Retail,15565,fictional_osint_pack
+2026-08-01,Surabaya,Pertamax Turbo,own_fictional,15712,CityPump Co,15396,fictional_osint_pack
+2026-08-01,Surabaya,Dexlite,own_fictional,14442,RivalEnergi,14018,fictional_osint_pack
+2026-08-01,Surabaya,Dexlite,own_fictional,14442,MitraGas Nusantara,14140,fictional_osint_pack
+2026-08-01,Surabaya,Dexlite,own_fictional,14442,BlueFlame Retail,15660,fictional_osint_pack
+2026-08-01,Surabaya,Dexlite,own_fictional,14442,CityPump Co,15263,fictional_osint_pack
+2026-08-01,Surabaya,Pertamina Dex,own_fictional,15972,RivalEnergi,15409,fictional_osint_pack
+2026-08-01,Surabaya,Pertamina Dex,own_fictional,15972,MitraGas Nusantara,15389,fictional_osint_pack
+2026-08-01,Surabaya,Pertamina Dex,own_fictional,15972,BlueFlame Retail,15978,fictional_osint_pack
+2026-08-01,Surabaya,Pertamina Dex,own_fictional,15972,CityPump Co,15398,fictional_osint_pack
+2026-08-01,Surabaya,Bright Gas 5.5kg,own_fictional,90983,RivalEnergi,91935,fictional_osint_pack
+2026-08-01,Surabaya,Bright Gas 5.5kg,own_fictional,90983,MitraGas Nusantara,90904,fictional_osint_pack
+2026-08-01,Surabaya,Bright Gas 5.5kg,own_fictional,90983,BlueFlame Retail,91436,fictional_osint_pack
+2026-08-01,Surabaya,Bright Gas 5.5kg,own_fictional,90983,CityPump Co,90741,fictional_osint_pack
+2026-08-01,Surabaya,Bright Gas 12kg,own_fictional,192213,RivalEnergi,191288,fictional_osint_pack
+2026-08-01,Surabaya,Bright Gas 12kg,own_fictional,192213,MitraGas Nusantara,192694,fictional_osint_pack
+2026-08-01,Surabaya,Bright Gas 12kg,own_fictional,192213,BlueFlame Retail,192140,fictional_osint_pack
+2026-08-01,Surabaya,Bright Gas 12kg,own_fictional,192213,CityPump Co,192298,fictional_osint_pack
+2026-08-01,Surabaya,LPG NPSO 12kg,own_fictional,184863,RivalEnergi,186192,fictional_osint_pack
+2026-08-01,Surabaya,LPG NPSO 12kg,own_fictional,184863,MitraGas Nusantara,186088,fictional_osint_pack
+2026-08-01,Surabaya,LPG NPSO 12kg,own_fictional,184863,BlueFlame Retail,184975,fictional_osint_pack
+2026-08-01,Surabaya,LPG NPSO 12kg,own_fictional,184863,CityPump Co,184361,fictional_osint_pack
+2026-08-01,Bandung,Pertamax,own_fictional,13582,RivalEnergi,13300,fictional_osint_pack
+2026-08-01,Bandung,Pertamax,own_fictional,13582,MitraGas Nusantara,14398,fictional_osint_pack
+2026-08-01,Bandung,Pertamax,own_fictional,13582,BlueFlame Retail,13987,fictional_osint_pack
+2026-08-01,Bandung,Pertamax,own_fictional,13582,CityPump Co,13966,fictional_osint_pack
+2026-08-01,Bandung,Pertamax Turbo,own_fictional,15753,RivalEnergi,16464,fictional_osint_pack
+2026-08-01,Bandung,Pertamax Turbo,own_fictional,15753,MitraGas Nusantara,15440,fictional_osint_pack
+2026-08-01,Bandung,Pertamax Turbo,own_fictional,15753,BlueFlame Retail,15882,fictional_osint_pack
+2026-08-01,Bandung,Pertamax Turbo,own_fictional,15753,CityPump Co,15093,fictional_osint_pack
+2026-08-01,Bandung,Dexlite,own_fictional,14660,RivalEnergi,13842,fictional_osint_pack
+2026-08-01,Bandung,Dexlite,own_fictional,14660,MitraGas Nusantara,13793,fictional_osint_pack
+2026-08-01,Bandung,Dexlite,own_fictional,14660,BlueFlame Retail,15054,fictional_osint_pack
+2026-08-01,Bandung,Dexlite,own_fictional,14660,CityPump Co,14166,fictional_osint_pack
+2026-08-01,Bandung,Pertamina Dex,own_fictional,16195,RivalEnergi,15792,fictional_osint_pack
+2026-08-01,Bandung,Pertamina Dex,own_fictional,16195,MitraGas Nusantara,15363,fictional_osint_pack
+2026-08-01,Bandung,Pertamina Dex,own_fictional,16195,BlueFlame Retail,16951,fictional_osint_pack
+2026-08-01,Bandung,Pertamina Dex,own_fictional,16195,CityPump Co,15676,fictional_osint_pack
+2026-08-01,Bandung,Bright Gas 5.5kg,own_fictional,91243,RivalEnergi,90406,fictional_osint_pack
+2026-08-01,Bandung,Bright Gas 5.5kg,own_fictional,91243,MitraGas Nusantara,90978,fictional_osint_pack
+2026-08-01,Bandung,Bright Gas 5.5kg,own_fictional,91243,BlueFlame Retail,90769,fictional_osint_pack
+2026-08-01,Bandung,Bright Gas 5.5kg,own_fictional,91243,CityPump Co,91128,fictional_osint_pack
+2026-08-01,Bandung,Bright Gas 12kg,own_fictional,192125,RivalEnergi,192908,fictional_osint_pack
+2026-08-01,Bandung,Bright Gas 12kg,own_fictional,192125,MitraGas Nusantara,191947,fictional_osint_pack
+2026-08-01,Bandung,Bright Gas 12kg,own_fictional,192125,BlueFlame Retail,191533,fictional_osint_pack
+2026-08-01,Bandung,Bright Gas 12kg,own_fictional,192125,CityPump Co,191958,fictional_osint_pack
+2026-08-01,Bandung,LPG NPSO 12kg,own_fictional,184981,RivalEnergi,184629,fictional_osint_pack
+2026-08-01,Bandung,LPG NPSO 12kg,own_fictional,184981,MitraGas Nusantara,185572,fictional_osint_pack
+2026-08-01,Bandung,LPG NPSO 12kg,own_fictional,184981,BlueFlame Retail,184746,fictional_osint_pack
+2026-08-01,Bandung,LPG NPSO 12kg,own_fictional,184981,CityPump Co,185637,fictional_osint_pack
+2026-08-01,Medan,Pertamax,own_fictional,13779,RivalEnergi,14099,fictional_osint_pack
+2026-08-01,Medan,Pertamax,own_fictional,13779,MitraGas Nusantara,14027,fictional_osint_pack
+2026-08-01,Medan,Pertamax,own_fictional,13779,BlueFlame Retail,12846,fictional_osint_pack
+2026-08-01,Medan,Pertamax,own_fictional,13779,CityPump Co,13947,fictional_osint_pack
+2026-08-01,Medan,Pertamax Turbo,own_fictional,15625,RivalEnergi,15050,fictional_osint_pack
+2026-08-01,Medan,Pertamax Turbo,own_fictional,15625,MitraGas Nusantara,15793,fictional_osint_pack
+2026-08-01,Medan,Pertamax Turbo,own_fictional,15625,BlueFlame Retail,16193,fictional_osint_pack
+2026-08-01,Medan,Pertamax Turbo,own_fictional,15625,CityPump Co,15201,fictional_osint_pack
+2026-08-01,Medan,Dexlite,own_fictional,14383,RivalEnergi,14646,fictional_osint_pack
+2026-08-01,Medan,Dexlite,own_fictional,14383,MitraGas Nusantara,14477,fictional_osint_pack
+2026-08-01,Medan,Dexlite,own_fictional,14383,BlueFlame Retail,14252,fictional_osint_pack
+2026-08-01,Medan,Dexlite,own_fictional,14383,CityPump Co,15595,fictional_osint_pack
+2026-08-01,Medan,Pertamina Dex,own_fictional,16127,RivalEnergi,16609,fictional_osint_pack
+2026-08-01,Medan,Pertamina Dex,own_fictional,16127,MitraGas Nusantara,16340,fictional_osint_pack
+2026-08-01,Medan,Pertamina Dex,own_fictional,16127,BlueFlame Retail,15649,fictional_osint_pack
+2026-08-01,Medan,Pertamina Dex,own_fictional,16127,CityPump Co,16602,fictional_osint_pack

@@ -1,0 +1,6 @@
+event_id,start_date,end_date,name,location,type,product_focus
+EV001,2026-08-16,2026-08-17,MyPertamina Pasar Rakyat Fiktif,Jakarta,nasional,awareness_mypertamina
+EV002,2026-09-04,2026-09-04,Sapa Pelanggan SPBU 20 Kota Fiktif,Multi-kota,nasional,cx_spbu
+EV003,2026-09-20,2026-09-22,Aktivasi Sponsorship Otomotif Fiktif,Tangerang,sponsorship_holding,fuel_series
+EV004,2026-10-09,2026-10-11,Fuel The Moment SPBU Tematik Fiktif,40 SPBU fiktif,nasional,motorsport_atmosphere
+EV005,2026-10-25,2026-10-26,Bright Gas Roadshow Dapur Aman Fiktif,Surabaya,nasional,lpg_bright_gas

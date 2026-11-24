@@ -1,0 +1,20 @@
+{
+  "note": "FICTIONAL prices for workshop only. Not real Pertamina price list.",
+  "as_of": "2026-10-29",
+  "fuel_jbu_idr_per_liter": {
+    "Pertamax": 13500,
+    "Pertamax Turbo": 15500,
+    "Dexlite": 14500,
+    "Pertamina Dex": 16000
+  },
+  "lpg_npso_refill_idr": {
+    "Bright Gas 5.5kg": 91000,
+    "Bright Gas 12kg": 192000,
+    "LPG NPSO 12kg": 185000
+  },
+  "losses_claim_reference_idr_per_liter": {
+    "note": "Fictional training reference only",
+    "Pertamax": 120,
+    "Dexlite": 110
+  }
+}
