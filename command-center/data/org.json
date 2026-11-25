@@ -1,0 +1,67 @@
+{
+  "updated": "2026-11-25T14:00:00+07:00",
+  "status": "draft",
+  "source": "knowledge-base/company/orgstructure.md",
+  "depts": {
+    "mrp": {
+      "label": "Market Research & Pricing",
+      "approver": "Antonny Fayen Budiman",
+      "nodes": [
+        {"id": "mrp-approver", "label": "Approver MRP", "kind": "human", "holder": "Antonny Fayen Budiman", "x": 280, "y": 40},
+        {"id": "mrp-cos", "label": "CoS MRP", "kind": "agent", "holder": "Chief of Staff MRP", "x": 280, "y": 140},
+        {"id": "mrp-cleaner", "label": "Data Cleaner", "kind": "agent", "holder": "Data Cleaner MRP", "x": 120, "y": 260},
+        {"id": "mrp-writer", "label": "Report Writer", "kind": "agent", "holder": "Report Writer MRP", "x": 440, "y": 260}
+      ],
+      "edges": [
+        {"from": "mrp-approver", "to": "mrp-cos"},
+        {"from": "mrp-cos", "to": "mrp-cleaner"},
+        {"from": "mrp-cos", "to": "mrp-writer"}
+      ]
+    },
+    "event": {
+      "label": "Event Management",
+      "approver": "Endo Eko Satryo",
+      "nodes": [
+        {"id": "ev-approver", "label": "Approver Event", "kind": "human", "holder": "Endo Eko Satryo", "x": 280, "y": 40},
+        {"id": "ev-cos", "label": "CoS Event", "kind": "agent", "holder": "Chief of Staff Event", "x": 280, "y": 140},
+        {"id": "ev-planner", "label": "Event Planner", "kind": "agent", "holder": "Event Planner", "x": 120, "y": 260},
+        {"id": "ev-comms", "label": "Comms Drafter", "kind": "agent", "holder": "Comms Drafter", "x": 440, "y": 260}
+      ],
+      "edges": [
+        {"from": "ev-approver", "to": "ev-cos"},
+        {"from": "ev-cos", "to": "ev-planner"},
+        {"from": "ev-cos", "to": "ev-comms"}
+      ]
+    },
+    "mblp": {
+      "label": "Marketing, Brand & Loyalty",
+      "approver": "Kania Hapsari",
+      "nodes": [
+        {"id": "mb-approver", "label": "Approver MBLP", "kind": "human", "holder": "Kania Hapsari", "x": 280, "y": 40},
+        {"id": "mb-cos", "label": "CoS MBLP", "kind": "agent", "holder": "Chief of Staff MBLP", "x": 280, "y": 140},
+        {"id": "mb-writer", "label": "Content Planner / Writer", "kind": "agent", "holder": "Content Writer", "x": 120, "y": 260},
+        {"id": "mb-creative", "label": "Creative Lead", "kind": "agent", "holder": "Creative Lead", "x": 440, "y": 260}
+      ],
+      "edges": [
+        {"from": "mb-approver", "to": "mb-cos"},
+        {"from": "mb-cos", "to": "mb-writer"},
+        {"from": "mb-cos", "to": "mb-creative"}
+      ]
+    },
+    "digital": {
+      "label": "Digital Marketing",
+      "approver": "Fachrizal Imaduddin",
+      "nodes": [
+        {"id": "dg-approver", "label": "Approver Digital", "kind": "human", "holder": "Fachrizal Imaduddin", "x": 280, "y": 40},
+        {"id": "dg-cos", "label": "CoS Digital", "kind": "agent", "holder": "Chief of Staff Digital", "x": 280, "y": 140},
+        {"id": "dg-perf", "label": "Performance Reader", "kind": "agent", "holder": "Performance Reader", "x": 120, "y": 260},
+        {"id": "dg-sched", "label": "Scheduler", "kind": "agent", "holder": "Scheduler", "x": 440, "y": 260}
+      ],
+      "edges": [
+        {"from": "dg-approver", "to": "dg-cos"},
+        {"from": "dg-cos", "to": "dg-perf"},
+        {"from": "dg-cos", "to": "dg-sched"}
+      ]
+    }
+  }
+}

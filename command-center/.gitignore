@@ -1,0 +1,7 @@
+data/responses.jsonl
+data/patra.lock
+site/data/responses.jsonl
+site/data/patra.lock
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="id" data-preview="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<title>Command Center · Pertamina Patra Niaga</title>
+<link rel="icon" href="assets/pertamina-patra-niaga.webp" type="image/webp">
+<link rel="stylesheet" href="app.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Lewati ke konten</a>
+<header class="top">
+  <div class="top-inner">
+    <a class="brand" href="#ikhtisar">
+      <img class="brand-logo" src="assets/pertamina-patra-niaga.webp" width="140" height="36" alt="Pertamina Patra Niaga">
+      <span class="brand-t">Command Center</span>
+    </a>
+    <nav id="tabs" class="tabs" aria-label="Halaman" data-i18n-aria="nav_aria">
+      <a href="#ikhtisar" data-tab="ikhtisar" data-i18n="tab_overview">Ikhtisar</a>
+      <a href="#tugas" data-tab="tugas" data-i18n="tab_task">Tugas</a>
+      <a href="#jadwal" data-tab="jadwal" data-i18n="tab_schedule">Jadwal agen</a>
+      <a href="#org" data-tab="org" data-i18n="tab_org">Struktur organisasi</a>
+      <a href="#sop" data-tab="sop">SOP</a>
+      <a href="#docs" data-tab="docs" data-i18n="tab_docs">Dokumentasi</a>
+      <a href="#masukan" data-tab="masukan" data-i18n="tab_feedback">Masukan ke agen</a>
+    </nav>
+    <div class="top-actions">
+      <div id="lang" class="lang-toggle" role="group" aria-label="Bahasa" data-i18n-aria="lang_aria">
+        <button type="button" class="lang-btn" data-lang="id" aria-pressed="true">ID</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <label class="group-pick">
+        <span class="sr" data-i18n="group_sr">Kode grup</span>
+        <select id="group" aria-label="Kode grup peserta" data-i18n-aria="group_aria">
+          <option value="MRP-A">MRP-A</option>
+          <option value="MRP-B">MRP-B</option>
+          <option value="EVENT-A">EVENT-A</option>
+          <option value="EVENT-B">EVENT-B</option>
+          <option value="MBLP-A">MBLP-A</option>
+          <option value="MBLP-B">MBLP-B</option>
+          <option value="DIGITAL-A">DIGITAL-A</option>
+          <option value="DIGITAL-B">DIGITAL-B</option>
+        </select>
+      </label>
+      <button id="tour-start" type="button" class="icon-btn" aria-label="Tutorial" data-i18n="tour_btn" data-i18n-aria="tour_aria">Tutorial</button>
+      <button id="theme" type="button" class="icon-btn" aria-label="Tema tampilan" data-i18n-aria="theme_aria">Tema</button>
+    </div>
+  </div>
+</header>
+<div id="tour" class="tour" hidden aria-live="polite">
+  <div class="tour-backdrop" data-tour-skip></div>
+  <div id="tour-spot" class="tour-spot" aria-hidden="true"></div>
+  <div id="tour-card" class="tour-card" role="dialog" aria-modal="true" aria-labelledby="tour-title">
+    <p class="tour-step"><span id="tour-step-n">1</span>/<span id="tour-step-total">8</span></p>
+    <h2 id="tour-title"></h2>
+    <p id="tour-body"></p>
+    <div class="tour-actions">
+      <button type="button" id="tour-skip" class="btn" data-i18n="tour_skip">Lewati</button>
+      <button type="button" id="tour-prev" class="btn" data-i18n="tour_prev">Kembali</button>
+      <button type="button" id="tour-next" class="btn btn-primary" data-i18n="tour_next">Lanjut</button>
+    </div>
+  </div>
+</div>
+
+<main id="main" class="wrap">
+  <p id="banner" class="banner" role="status" data-i18n="banner">Peserta memilih kode grup di kanan atas. Semua perubahan tersimpan sebagai draf. Isi bebas bahasa apa saja; hanya antarmuka yang diganti ID/EN.</p>
+
+  <section id="ikhtisar" class="view" data-view="ikhtisar">
+    <div class="sec-head">
+      <h1 data-i18n="overview_title">Ikhtisar semua sub-fungsi</h1>
+      <p class="muted" data-i18n="overview_lead">Lihat keempat sub-fungsi dan seluruh agen sekaligus. Pilih kartu untuk pindah ke grup A sub-fungsi itu.</p>
+    </div>
+    <div class="seg" role="group" aria-label="Mode ikhtisar">
+      <button type="button" class="seg-btn on" data-overview="depts" data-i18n="overview_depts">Semua sub-fungsi</button>
+      <button type="button" class="seg-btn" data-overview="agents" data-i18n="overview_agents">Semua agen</button>
+    </div>
+    <div id="overview-depts" class="overview-grid"></div>
+    <div id="overview-agents" class="overview-grid" hidden></div>
+  </section>
+
+  <section id="tugas" class="view" data-view="tugas" hidden>
+    <div class="hero">
+      <div>
+        <p class="eyebrow" id="dept-label">Sub-fungsi</p>
+        <h1 id="task-title">Tugas</h1>
+        <p class="lead" id="task-brief"></p>
+        <p class="stamp"><span data-i18n="label_output">Output</span>: <strong id="task-output"></strong> · <span data-i18n="label_approver">Approver</span>: <strong id="task-approver"></strong></p>
+      </div>
+    </div>
+    <p id="task-callout" class="callout" hidden></p>
+    <div class="sec-head row">
+      <div>
+        <h2 data-i18n="task_board_title">Monitor tugas agen</h2>
+        <p class="muted" data-i18n="task_board_lead">Pekerjaan yang sedang dipegang agen. Teks tugas tidak diterjemahkan.</p>
+      </div>
+      <div class="row-actions">
+        <label class="inline">
+          <span data-i18n="task_filter">Tampilkan</span>
+          <select id="task-filter">
+            <option value="dept" data-i18n="schedule_filter_dept">Sub-fungsi grup saja</option>
+            <option value="all" data-i18n="schedule_filter_all">Semua sub-fungsi</option>
+          </select>
+        </label>
+        <span id="task-count" class="muted count"></span>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="ptable" id="task-table">
+        <thead>
+          <tr>
+            <th data-i18n="th_project">Tugas</th>
+            <th data-i18n="th_owner">Owner</th>
+            <th data-i18n="th_status">Status</th>
+            <th data-i18n="th_next">Langkah berikutnya</th>
+            <th data-i18n="th_deadline">Tenggat</th>
+            <th data-i18n="th_updated">Diperbarui</th>
+          </tr>
+        </thead>
+        <tbody id="task-body"><tr><td colspan="6" class="empty" data-i18n="loading_tasks">Memuat tugas…</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="jadwal" class="view" data-view="jadwal" hidden>
+    <div class="sec-head row">
+      <div>
+        <h1 data-i18n="schedule_title">Jadwal agen</h1>
+        <p class="muted" data-i18n="schedule_lead">Routine otomatis per agen. Waktu WIB. Yang dijeda tidak membangunkan bot. Pola sama dengan kalender routine di ops-dashboard.</p>
+      </div>
+      <button id="schedule-add" type="button" class="btn btn-primary" data-i18n="schedule_add">+ Routine</button>
+    </div>
+    <p id="schedule-note" class="callout"></p>
+    <p id="schedule-msg" class="msg" role="status"></p>
+    <div class="filters panel">
+      <label class="inline">
+        <span data-i18n="schedule_filter">Tampilkan</span>
+        <select id="schedule-filter">
+          <option value="dept" data-i18n="schedule_filter_dept">Sub-fungsi grup saja</option>
+          <option value="all" data-i18n="schedule_filter_all">Semua sub-fungsi</option>
+        </select>
+      </label>
+      <button id="schedule-reload" type="button" class="btn" data-i18n="reload">Muat ulang</button>
+      <span id="schedule-count" class="muted count"></span>
+    </div>
+    <div class="table-wrap">
+      <table class="ptable" id="schedule-table">
+        <thead>
+          <tr>
+            <th data-i18n="th_time">Waktu (WIB)</th>
+            <th data-i18n="th_days">Hari</th>
+            <th data-i18n="th_routine">Routine</th>
+            <th data-i18n="th_owner">Owner</th>
+            <th data-i18n="th_dept">Sub-fungsi</th>
+            <th data-i18n="th_status">Status</th>
+            <th data-i18n="th_actions">Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="schedule-body"><tr><td colspan="7" class="empty" data-i18n="loading_schedule">Memuat jadwal…</td></tr></tbody>
+      </table>
+    </div>
+    <dialog id="schedule-editor" aria-labelledby="schedule-editor-title">
+      <form id="schedule-form" method="dialog">
+        <h2 id="schedule-editor-title" data-i18n="schedule_editor_title">Routine agen</h2>
+        <input type="hidden" id="sch-id">
+        <label><span data-i18n="th_time">Waktu (WIB)</span> <input id="sch-time" required maxlength="40" placeholder="07:30"></label>
+        <label><span data-i18n="th_days">Hari</span> <input id="sch-days" required maxlength="80" placeholder="Senin–Jumat"></label>
+        <label><span data-i18n="th_routine">Routine</span> <textarea id="sch-routine" rows="3" required maxlength="400"></textarea></label>
+        <label><span data-i18n="th_owner">Owner</span> <input id="sch-owner" required maxlength="120"></label>
+        <label><span data-i18n="field_dept">Sub-fungsi</span>
+          <select id="sch-dept">
+            <option value="mrp">MRP</option>
+            <option value="event">Event</option>
+            <option value="mblp">MBLP</option>
+            <option value="digital">Digital</option>
+          </select>
+        </label>
+        <label><span data-i18n="th_status">Status</span>
+          <select id="sch-status">
+            <option value="Aktif" data-i18n="status_active">Aktif</option>
+            <option value="Dijeda" data-i18n="status_paused">Dijeda</option>
+          </select>
+        </label>
+        <div class="row-actions">
+          <button value="cancel" class="btn" data-i18n="cancel">Batal</button>
+          <button id="sch-save" value="default" class="btn btn-primary" data-i18n="schedule_save">Simpan draf</button>
+        </div>
+      </form>
+    </dialog>
+  </section>
+
+  <section id="org" class="view" data-view="org" hidden>
+    <div class="sec-head row">
+      <div>
+        <h1 data-i18n="org_title">Struktur organisasi</h1>
+        <p class="muted" data-i18n="org_lead">Gambar di canvas, atau kirim prompt ke Chief of Staff. Status selalu draf. Label peran tidak diterjemahkan.</p>
+      </div>
+      <div class="row-actions">
+        <button id="org-add" type="button" class="btn btn-primary" data-i18n="org_add">+ Peran</button>
+        <button id="org-save" type="button" class="btn" data-i18n="org_save">Simpan canvas</button>
+        <button id="org-reload" type="button" class="btn" data-i18n="reload">Muat ulang</button>
+      </div>
+    </div>
+    <p id="org-msg" class="msg" role="status"></p>
+    <div class="org-layout">
+      <div class="canvas-wrap panel">
+        <canvas id="org-canvas" width="720" height="420" aria-label="Canvas struktur organisasi" data-i18n-aria="org_canvas_aria"></canvas>
+        <p class="muted small" data-i18n="org_canvas_help">Seret kotak untuk memindahkan. Dobel-klik dua kotak untuk menghubungkan garis lapor. Klik kanan kotak untuk hapus.</p>
+      </div>
+      <form id="org-form" class="panel org-form">
+        <h2 data-i18n="org_edit">Edit peran</h2>
+        <label><span data-i18n="field_id">ID</span> <input id="node-id" name="id" required pattern="[a-z0-9][a-z0-9_-]{0,63}" placeholder="ev-logistik"></label>
+        <label><span data-i18n="field_role">Nama peran</span> <input id="node-label" name="label" required maxlength="120"></label>
+        <label><span data-i18n="field_kind">Jenis</span>
+          <select id="node-kind">
+            <option value="agent" data-i18n="kind_agent">Agen</option>
+            <option value="human" data-i18n="kind_human">Manusia</option>
+          </select>
+        </label>
+        <label><span data-i18n="field_holder">Pemegang</span> <input id="node-holder" maxlength="120"></label>
+        <div class="row-actions">
+          <button type="submit" class="btn btn-primary" data-i18n="org_save_role">Simpan peran</button>
+          <button type="button" id="node-delete" class="btn btn-danger" data-i18n="delete">Hapus</button>
+        </div>
+      </form>
+      <form id="org-prompt" class="panel org-form">
+        <h2 data-i18n="org_prompt_title">Prompt ke Chief of Staff</h2>
+        <p class="muted small" data-i18n="org_prompt_help">Masuk antrean grup yang dipilih. CoS menerapkan perubahan ke draf; hasil muncul di canvas setelah dimuat ulang. Teks prompt bebas bahasa.</p>
+        <label><span data-i18n="field_instruction">Instruksi</span>
+          <textarea id="org-note" rows="4" maxlength="2000" data-i18n-placeholder="org_prompt_ph" placeholder="Contoh: tambah peran Logistik di bawah CoS Event"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary" data-i18n="org_send">Kirim ke CoS</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="docs" class="view" data-view="docs" hidden>
+    <div class="sec-head">
+      <h1 data-i18n="docs_title">Dokumentasi</h1>
+      <p class="muted" id="docs-summary"></p>
+      <p class="stamp"><span data-i18n="docs_updated">Diperbarui</span>: <strong id="docs-updated"></strong></p>
+    </div>
+    <div id="docs-body" class="docs-body"></div>
+  </section>
+
+  <section id="sop" class="view" data-view="sop" hidden>
+    <div class="sec-head row">
+      <div>
+        <h1>SOP</h1>
+        <p class="muted" data-i18n="sop_lead">CRUD draf di command center. Hapus tidak menghapus file di knowledge base. Judul dan ringkasan tidak diterjemahkan.</p>
+      </div>
+      <button id="sop-add" type="button" class="btn btn-primary" data-i18n="sop_add">+ SOP draf</button>
+    </div>
+    <p id="sop-msg" class="msg" role="status"></p>
+    <div id="sop-list" class="sop-list"></div>
+    <dialog id="sop-editor" aria-labelledby="sop-editor-title">
+      <form id="sop-form" method="dialog">
+        <h2 id="sop-editor-title" data-i18n="sop_editor_title">SOP draf</h2>
+        <input type="hidden" id="sop-id">
+        <label><span data-i18n="field_title">Judul</span> <input id="sop-title" required maxlength="200"></label>
+        <label><span data-i18n="field_dept">Sub-fungsi</span>
+          <select id="sop-dept">
+            <option value="mrp">MRP</option>
+            <option value="event">Event</option>
+            <option value="mblp">MBLP</option>
+            <option value="digital">Digital</option>
+            <option value="all" data-i18n="dept_all">Semua</option>
+          </select>
+        </label>
+        <label><span data-i18n="field_source">Path sumber</span> <input id="sop-path" maxlength="400" placeholder="knowledge-base/company/sop/…"></label>
+        <label><span data-i18n="field_summary">Ringkasan</span> <textarea id="sop-summary" rows="3" maxlength="800"></textarea></label>
+        <label><span data-i18n="field_steps">Langkah singkat</span> <textarea id="sop-steps" rows="4" maxlength="1200"></textarea></label>
+        <div class="row-actions">
+          <button value="cancel" class="btn" data-i18n="cancel">Batal</button>
+          <button id="sop-save" value="default" class="btn btn-primary" data-i18n="sop_save">Simpan draf</button>
+        </div>
+      </form>
+    </dialog>
+  </section>
+
+  <section id="masukan" class="view" data-view="masukan" hidden>
+    <div class="sec-head">
+      <h1 data-i18n="feedback_title">Masukan ke agen</h1>
+      <p class="muted" data-i18n="feedback_lead">Sama seperti antrean ops-dashboard. Peserta juga bisa berbicara langsung di app Grokbot. Isi catatan bebas bahasa.</p>
+    </div>
+    <form id="feedback-form" class="panel feedback-form">
+      <label><span data-i18n="feedback_label">Catatan untuk Chief of Staff grup</span>
+        <textarea id="feedback-note" rows="4" maxlength="2000" required data-i18n-placeholder="feedback_ph" placeholder="Tulis arahan, koreksi, atau pertanyaan…"></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary" data-i18n="feedback_send">Kirim masukan</button>
+      <p id="feedback-msg" class="msg" role="status"></p>
+    </form>
+    <div class="sec-head row">
+      <h2 data-i18n="queue_title">Antrean grup</h2>
+      <button id="history-reload" type="button" class="btn" data-i18n="reload">Muat ulang</button>
+    </div>
+    <div id="history" class="history"></div>
+  </section>
+</main>
+<footer class="foot wrap">
+  <p data-i18n="footer">Workshop Fungsi Marketing · data latihan fiktif · status draf. Tidak mengubah <code>/ops/</code> keluarga.</p>
+</footer>
+</body>
+</html>

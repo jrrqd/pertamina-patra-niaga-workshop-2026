@@ -12,5 +12,5 @@ Mulai dari sample, lalu file penuh di `mock-data/mrp/`:
 
 Tulis `knowledge-base/mrp/drafts/kualitas_data.md`: anomali harga kompetitor, conjoint yang bertentangan dengan verbatim, CSAT yang dipaksa, skor offline buruk. Sebut id baris. Pisahkan sumber internal fiktif vs publik fiktif.
 
-## Sesi 2–3
+## Sesi 2
 Perbarui bila Event atau Digital mengirim angka baru lewat status report. Serahkan ke CoS MRP. Jangan hapus CSV sumber.

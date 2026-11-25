@@ -1,91 +1,123 @@
-# Brief sub-fungsi + custom prompt
+# Brief sub-fungsi + kartu tempel
 
-Setelah paparan dan kickoff (`prompts/00_kickoff.md`), tiap kelompok memakai section di bawah. Prompt lengkap juga ada di `prompts/slides/`.
+Setelah paparan dan kartu 0 (`prompts/00_kickoff.md`), tiap kelompok memakai bagian di bawah.  
+Peserta hanya menempel kartu ke Chief of Staff. Spesialis sudah disiapkan.
+
+Kartu lengkap: `prompts/slides/`.
 
 ---
 
 ## MRP — Market Research & Pricing
 
-**Approver:** Antonny Fayen Budiman  
-**Peran agen:** CoS (pemilik KB + command center), Data Cleaner, Report Writer
+### Pembatas
+**Brief MRP** · Approver: Antonny Fayen Budiman
 
-### Yang dikerjakan Sesi 1
-- Bersihkan data competitor, conjoint, CSAT/loyalty, evaluasi offline
-- Tulis ringkasan ke `knowledge-base/mrp/drafts/`
-- CoS memperbarui `knowledge-base/command-center.md` (hanya MRP)
+### Peran
+- Chief of Staff MRP — satu-satunya penulis data bersama dan papan status; pintu masuk kelompok
+- Data Cleaner — sudah disiapkan; bersihkan data kompetitor, conjoint, survei, lokasi
+- Report Writer — sudah disiapkan; laporan mingguan di akhir
+- Approver manusia: Antonny Fayen Budiman
 
-### Data
-`mock-data/mrp/` — mulai `*_sample100.csv`, lalu file penuh.  
-SOP: `knowledge-base/company/sop/sop_mrp_kb_command_center.md`
+### Sesi 1 — yang dikerjakan
+1. Mulai dari cuplikan pendek di `mock-data/mrp/`, lalu file penuh
+2. Tulis `knowledge-base/mrp/drafts/kualitas_data.md`
+3. Catat kejanggalan dengan id / tanggal / kota / produk
+4. Chief of Staff perbarui papan status untuk pekerjaan data saja
+5. Minta persetujuan pertama ke Antonny. Catat di log. Jangan set `approved` sendiri
 
-### Output
-`kualitas_data.md` + baris command center terisi untuk pekerjaan KB
+### Sesi 2 — empat langkah, satu jebakan di tiap langkah
+1. Cek harga kompetitor vs buku harga
+2. Cek conjoint yang bertentangan dengan teks
+3. Cek survei yang skornya tinggi tetapi teksnya memaksa
+4. Cek evaluasi lokasi yang buruk, lalu terima laporan status kelompok lain
 
-### Custom prompt (tempel setelah kickoff)
-
-Lihat blok di `prompts/slides/mrp-sesi1.md` (satu tempelan).
+**Kartu 1:** `prompts/slides/1-mrp-sesi1.md`  
+**Kartu 5:** `prompts/slides/5-mrp-sesi2.md`  
+**Kartu 9:** `prompts/slides/9-laporan-dan-log.md` (laporan mingguan dan log)
 
 ---
 
 ## Event Management
 
-**Approver:** Endo Eko Satryo  
-**Peran agen:** CoS (orkestrator), Event Planner, Comms Drafter
+### Pembatas
+**Brief Event** · Approver: Endo Eko Satryo
 
-### Yang dikerjakan Sesi 1
-- Baca KB MRP dan seed calendar
-- Tulis `campaign_calendar.md` (offline + online)
-- Siapkan monitoring isu dari kliping (tanpa merilis)
+### Peran
+- Chief of Staff Event — pengatur kampanye; pintu masuk ke MRP
+- Event Planner — sudah disiapkan; kalender nasional dan aktivasi
+- Comms Drafter — sudah disiapkan; draf batas pesan, tanpa merilis
+- Approver manusia: Endo Eko Satryo
 
-### Data
-`mock-data/event/event_calendar_seed.csv`, `media_clippings.csv`  
-SOP: `sop_campaign_orchestration.md`, `sop_sync_dan_status_report.md`
+### Sesi 1 — yang dikerjakan
+1. Baca fakta MRP (jangan mengarang angka)
+2. Baca benih kalender + kliping media
+3. Tulis `knowledge-base/evm/drafts/campaign_calendar.md`
+4. Siapkan draf holding bila ada isu; rumor = belum terverifikasi
+5. Kirim laporan status ke MRP. Minta persetujuan pertama ke Endo. Catat di log
 
-### Output
-Calendar draft + draf status-report ke MRP (belum mengedit command center)
+### Sesi 2 — empat langkah, satu jebakan di tiap langkah
+1. Baca ulang kalender dan kliping
+2. Tandai isu yang belum terverifikasi
+3. Tahan tuduhan sensitif
+4. Picu MBLP dan Digital, lalu minta persetujuan Endo
 
-### Custom prompt
-`prompts/slides/event-sesi1.md`
+**Kartu 2:** `prompts/slides/2-event-sesi1.md`  
+**Kartu 6:** `prompts/slides/6-event-sesi2.md`
 
 ---
 
 ## MBLP — Marketing, Brand & Loyalty
 
-**Approver:** Kania Hapsari  
-**Peran agen:** CoS, Content Planner/Writer, Creative/Loyalty support
+### Pembatas
+**Brief MBLP** · Approver: Kania Hapsari
 
-### Yang dikerjakan Sesi 1
-- Jalur kreatif: `01_content_planning.md` lalu `02_content_draft.md`
-- Jangan loncat ke content bank sebelum approval
+### Peran
+- Chief of Staff MBLP — jaga urutan jalur kreatif; pintu masuk kelompok
+- Content Planner / Writer — sudah disiapkan; perencanaan lalu draf
+- Creative / Loyalty Support — sudah disiapkan; materi final setelah persetujuan
+- Approver manusia: Kania Hapsari
 
-### Data
-`mock-data/mblp/content_history.csv` (+ comments/partners di sesi berikutnya)  
-SOP: `sop_creative_pipeline.md`
+### Sesi 1 — yang dikerjakan
+1. Baca kalender Event bila ada; jika belum → catat terhambat
+2. Baca riwayat konten (cuplikan dulu)
+3. Tulis `01_content_planning.md` (lima akun resmi)
+4. Tulis `02_content_draft.md` (naskah draf, bukan final)
+5. Minta persetujuan pertama ke Kania. Jangan loncat ke materi final
 
-### Output
-Planning + draft yang selaras calendar Event dan fakta KB
+### Sesi 2 — empat langkah, satu jebakan di tiap langkah
+1. Cek naskah terhadap pedoman merek
+2. Cek komentar; jangan menyalin data pribadi
+3. Tahan rumor dan muatan politik
+4. Revisi sampai paket untuk Kania; materi final hanya yang sudah disetujui
 
-### Custom prompt
-`prompts/slides/mblp-sesi1.md`
+**Kartu 3:** `prompts/slides/3-mblp-sesi1.md`  
+**Kartu 7:** `prompts/slides/7-mblp-sesi2.md`
 
 ---
 
 ## Digital Marketing
 
-**Approver:** Fachrizal Imaduddin  
-**Peran agen:** CoS, Performance Reader, Scheduler
+### Pembatas
+**Brief Digital** · Approver: Fachrizal Imaduddin
 
-### Yang dikerjakan Sesi 1
-- Baca performa lima akun + WA blast
-- Tulis rencana homeless media
-- Brief creative ke MBLP menyusul di Sesi 2 (jangan tulis creative sendiri)
+### Peran
+- Chief of Staff Digital — media yang tersedia, brief ke MBLP, jadwal tayang; pintu masuk kelompok
+- Performance Reader — sudah disiapkan; jangkauan, interaksi, toko, WA
+- Scheduler — sudah disiapkan; selaraskan materi final dengan kalender di Sesi 2
+- Approver manusia: Fachrizal Imaduddin
 
-### Data
-`mock-data/digital/social_daily.csv`, `homeless_media_inventory.csv`, `wa_blast_history.csv`  
-SOP: `sop_digital_scheduling.md`
+### Sesi 1 — yang dikerjakan
+1. Baca performa lima akun + riwayat WA (cuplikan dulu)
+2. Tulis `performance_readout.md` — tandai kejanggalan + id/tanggal
+3. Tulis `homeless_media_plan.md` dari slot yang tersedia
+4. Jangan menulis materi kreatif sendiri
+5. Brief ke MBLP menyusul di Sesi 2. Minta persetujuan pertama ke Fachrizal
 
-### Output
-`performance_readout.md` + `homeless_media_plan.md`
+### Sesi 2 — empat langkah, satu jebakan di tiap langkah
+1. Cek performa yang ambruk
+2. Cek klaim konversi yang tidak terbukti
+3. Cek riwayat WA yang gagal
+4. Minta materi ke MBLP, jadwalkan hanya yang sudah disetujui
 
-### Custom prompt
-`prompts/slides/digital-sesi1.md`
+**Kartu 4:** `prompts/slides/4-digital-sesi1.md`  
+**Kartu 8:** `prompts/slides/8-digital-sesi2.md`

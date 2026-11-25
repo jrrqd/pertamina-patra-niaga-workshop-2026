@@ -6,4 +6,10 @@ __pycache__/
 node_modules/
 presentation-app/node_modules/
 presentation-app/dist/
-.DS_Store
+fasilitator-only/
+*.pptx
+*.tgz
+*.bundle
+command-center/site/.vercel/
+command-center/data/responses.jsonl
+command-center/data/patra.lock

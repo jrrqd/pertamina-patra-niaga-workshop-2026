@@ -1,0 +1,191 @@
+{
+  "updated": "2026-11-25T14:40:00+07:00",
+  "updated_label": "25 Nov 2026, 14:40 WIB",
+  "note": "Papan tugas agen. Angka dan lokasi fiktif. Status menunggu manusia tetap di meja approver.",
+  "depts": {
+    "mrp": {
+      "title": "Analisis data latihan",
+      "brief": "Tren, perkiraan kebutuhan, dan rekomendasi berbasis angka. Bukan memo harga.",
+      "output": "grup/<kode>/drafts/02_analisis_data.md",
+      "approver": "Antonny Fayen Budiman",
+      "callout": "Tenggat terdekat: ringkasan tren kompetitor Jumat 27 Nov sebelum Sesi 2. Menunggu Antonny: anomali harga Jakarta 12 Okt.",
+      "items": [
+        {
+          "id": "mrp-101",
+          "project": "Ringkasan tren harga kompetitor 17–23 Nov (fiktif)",
+          "owner": "CoS MRP",
+          "status": "Berjalan",
+          "next_step": "Gabungkan competitor_prices_daily + price_book; tandai undercut ekstrem sebelum masuk rekomendasi",
+          "deadline": "27 Nov",
+          "updated": "25 Nov, 09:10"
+        },
+        {
+          "id": "mrp-102",
+          "project": "Bersihkan anomali CSAT MyPertamina",
+          "owner": "Data Cleaner MRP",
+          "status": "Menunggu Antonny",
+          "next_step": "Skor tinggi tapi teks ‘dipaksa petugas’ ditahan; minta keputusan sebelum dirata-rata",
+          "deadline": "26 Nov",
+          "updated": "25 Nov, 11:05",
+          "deadline_warning": true
+        },
+        {
+          "id": "mrp-103",
+          "project": "Perkiraan kebutuhan SPBU tematik akhir pekan",
+          "owner": "Report Writer MRP",
+          "status": "Draf",
+          "next_step": "Pakai offline_site_evaluation; antrian buruk masuk catatan, jangan diabaikan",
+          "deadline": "28 Nov",
+          "updated": "25 Nov, 13:40"
+        },
+        {
+          "id": "mrp-104",
+          "project": "Cek conjoint vs verbatim penerimaan harga",
+          "owner": "Data Cleaner MRP",
+          "status": "Berjalan",
+          "next_step": "Baris yang memilih harga tinggi tapi menolak di teks tidak dipakai sebagai bukti penerimaan",
+          "deadline": "—",
+          "updated": "25 Nov, 08:55"
+        }
+      ]
+    },
+    "event": {
+      "title": "Ide dan rencana penyelenggaraan",
+      "brief": "Rundown, vendor, logistik, izin, eksekusi di lokasi. Tanpa holding statement dan tanpa rilis media.",
+      "output": "grup/<kode>/drafts/02_ide_dan_rencana_event.md",
+      "approver": "Endo Eko Satryo",
+      "callout": "Fokus EV004–EV005. Asumsi vendor/izin belum fakta sampai dicek. Tidak ada draf pesan siaga di soal v9.",
+      "items": [
+        {
+          "id": "ev-201",
+          "project": "Ide aktivasi Fuel The Moment (EV004) di 40 SPBU fiktif",
+          "owner": "CoS Event",
+          "status": "Berjalan",
+          "next_step": "Susun konsep + kriteria lokasi; serahkan rundown ke Event Planner",
+          "deadline": "27 Nov",
+          "updated": "25 Nov, 10:20"
+        },
+        {
+          "id": "ev-202",
+          "project": "Rundown & logistik Bright Gas Roadshow (EV005)",
+          "owner": "Event Planner",
+          "status": "Berjalan",
+          "next_step": "Daftar vendor panggung, konsumsi, dan izin lokasi Surabaya; pisahkan yang sudah pasti vs asumsi",
+          "deadline": "26 Nov",
+          "updated": "25 Nov, 12:15",
+          "deadline_warning": true
+        },
+        {
+          "id": "ev-203",
+          "project": "Cek bentrok kalender nasional EV001–EV005",
+          "owner": "Event Planner",
+          "status": "Selesai draf",
+          "next_step": "Tidak ada bentrok tanggal di seed; tunggu Endo setujui catatan eksekusi",
+          "deadline": "—",
+          "updated": "24 Nov, 16:00"
+        },
+        {
+          "id": "ev-204",
+          "project": "Daftar izin & checklist eksekusi di lokasi",
+          "owner": "CoS Event",
+          "status": "Menunggu Endo",
+          "next_step": "Checklist keamanan lokasi dan kuota booth; jangan lampirkan rilis media",
+          "deadline": "28 Nov",
+          "updated": "25 Nov, 14:05"
+        }
+      ]
+    },
+    "mblp": {
+      "title": "Brief dan campaign plan",
+      "brief": "Campaign plan baru sesuai pedoman merek. Pakai istilah campaign plan.",
+      "output": "grup/<kode>/drafts/02_campaign_plan.md",
+      "approver": "Kania Hapsari",
+      "callout": "Jalur kreatif: planning → draft → creative → approval. Klaim jaminan dan angka hemat berlebihan ditahan.",
+      "items": [
+        {
+          "id": "mb-301",
+          "project": "Campaign plan Q1 awareness Bright Gas (fiktif)",
+          "owner": "CoS MBLP",
+          "status": "Berjalan",
+          "next_step": "Samakan pilar dengan brand guideline; minta Kania setujui kerangka sebelum creative",
+          "deadline": "27 Nov",
+          "updated": "25 Nov, 09:45"
+        },
+        {
+          "id": "mb-302",
+          "project": "Brief caption batch 3 pilar dari content_history",
+          "owner": "Content Planner / Writer",
+          "status": "Berjalan",
+          "next_step": "Tahan caption lama yang klaim berlebihan; sebut post_id di log",
+          "deadline": "26 Nov",
+          "updated": "25 Nov, 11:30",
+          "deadline_warning": true
+        },
+        {
+          "id": "mb-303",
+          "project": "Arahan key visual campaign plan",
+          "owner": "Creative Lead",
+          "status": "Draf",
+          "next_step": "Hanya arahan KV/naskah, bukan file produksi jadi; menunggu approval Kania",
+          "deadline": "29 Nov",
+          "updated": "25 Nov, 13:10"
+        },
+        {
+          "id": "mb-304",
+          "project": "Tinjau komentar komunitas sebelum masuk plan",
+          "owner": "CoS MBLP",
+          "status": "Menunggu Kania",
+          "next_step": "Data pribadi, rumor, dan politik ditahan; jangan masuk campaign plan sebagai fakta",
+          "deadline": "—",
+          "updated": "25 Nov, 08:20"
+        }
+      ]
+    },
+    "digital": {
+      "title": "Paket konten dan kalender konten",
+      "brief": "Susun konten dan kalender dari data latihan. Jangan mengunggah.",
+      "output": "grup/<kode>/drafts/02_konten_dan_kalender.md",
+      "approver": "Fachrizal Imaduddin",
+      "callout": "Kalender hanya dari slot available + item content bank approved. Impresi tanpa penjualan bukan bukti konversi.",
+      "items": [
+        {
+          "id": "dg-401",
+          "project": "Rekap performa 5 akun fiktif minggu 17–23 Nov",
+          "owner": "Performance Reader",
+          "status": "Berjalan",
+          "next_step": "Tandai engagement ambruk; jangan dijadwalkan ulang mentah-mentah",
+          "deadline": "26 Nov",
+          "updated": "25 Nov, 10:00",
+          "deadline_warning": true
+        },
+        {
+          "id": "dg-402",
+          "project": "Usulan kalender konten minggu depan",
+          "owner": "Scheduler",
+          "status": "Berjalan",
+          "next_step": "Ambil hanya item approved dari content bank; cocokkan campaign calendar Event",
+          "deadline": "27 Nov",
+          "updated": "25 Nov, 12:40"
+        },
+        {
+          "id": "dg-403",
+          "project": "Rencana homeless media Surabaya / Jakarta",
+          "owner": "CoS Digital",
+          "status": "Draf",
+          "next_step": "Inventori slot available; brief creative ke MBLP, jangan menulis creative sendiri",
+          "deadline": "28 Nov",
+          "updated": "25 Nov, 09:25"
+        },
+        {
+          "id": "dg-404",
+          "project": "Audit riwayat WA blast sebelum masuk kalender",
+          "owner": "Performance Reader",
+          "status": "Menunggu Fachrizal",
+          "next_step": "Yang hampir tidak dibuka ditahan; review manusia dulu",
+          "deadline": "—",
+          "updated": "24 Nov, 17:50"
+        }
+      ]
+    }
+  }
+}

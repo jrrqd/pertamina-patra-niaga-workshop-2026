@@ -29,6 +29,10 @@ export default function App() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
+  useEffect(() => {
+    setCopied(false);
+  }, [i]);
+
   async function copyPrompt(key) {
     const text = PROMPTS[key];
     await navigator.clipboard.writeText(text);
@@ -37,9 +41,13 @@ export default function App() {
   }
 
   const bg = slide.bg ? BG[slide.bg] : null;
+  const isDivider = slide.kind === "divider";
+  const headers = slide.tableHeaders || ["Item", "Keterangan", "Catatan"];
 
   return (
-    <div className={`deck ${bg ? "has-bg" : ""}`}>
+    <div
+      className={`deck ${bg ? "has-bg" : ""} ${isDivider ? "divider-deck" : ""}`}
+    >
       {bg && <div className="bg" style={{ backgroundImage: `url(${bg})` }} />}
       <header className="top">
         <img
@@ -55,7 +63,8 @@ export default function App() {
         </div>
       </header>
 
-      <main className="stage">
+      <main className={`stage ${isDivider ? "stage-divider" : ""}`}>
+        {slide.kicker && <p className="kicker">{slide.kicker}</p>}
         <h1>{slide.title}</h1>
         {slide.body && <p className="body">{slide.body}</p>}
         {slide.bullets && (
@@ -65,18 +74,28 @@ export default function App() {
             ))}
           </ul>
         )}
+        {slide.steps && (
+          <ol className="steps">
+            {slide.steps.map((s, idx) => (
+              <li key={s}>
+                <span className="step-num">{idx + 1}</span>
+                <span>{s}</span>
+              </li>
+            ))}
+          </ol>
+        )}
         {slide.table && (
           <table>
             <thead>
               <tr>
-                <th>Paket</th>
-                <th>Harga</th>
-                <th>Catatan</th>
+                {headers.map((h) => (
+                  <th key={h}>{h}</th>
+                ))}
               </tr>
             </thead>
             <tbody>
               {slide.table.map((row) => (
-                <tr key={row[0]}>
+                <tr key={row.join("|")}>
                   {row.map((c) => (
                     <td key={c}>{c}</td>
                   ))}
@@ -89,7 +108,7 @@ export default function App() {
         {slide.promptKey && (
           <div className="prompt-box">
             <div className="prompt-head">
-              <strong>Custom prompt siap tempel</strong>
+              <strong>Kartu tempel siap salin</strong>
               <button type="button" onClick={() => copyPrompt(slide.promptKey)}>
                 {copied ? "Tersalin" : "Salin prompt"}
               </button>
@@ -103,13 +122,16 @@ export default function App() {
         <button type="button" disabled={i === 0} onClick={() => setI(i - 1)}>
           Sebelumnya
         </button>
-        <div className="dots">
+        <div className="dots" role="tablist" aria-label="Daftar slide">
           {slides.map((s, idx) => (
             <button
               key={s.id}
               type="button"
-              className={idx === i ? "dot on" : "dot"}
+              className={`dot ${idx === i ? "on" : ""} ${
+                s.kind === "divider" ? "section" : ""
+              }`}
               aria-label={s.title}
+              aria-current={idx === i ? "true" : undefined}
               onClick={() => setI(idx)}
             />
           ))}

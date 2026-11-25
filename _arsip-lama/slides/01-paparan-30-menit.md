@@ -1,7 +1,7 @@
 # Paparan 30 menit — Organisasi Agentic AI untuk Marketing
 
 **Fungsi Marketing · Pertamina Patra Niaga · 27 Nov 2026**  
-Hosting hands-on: **Cursor Origin** (bukan GitHub). Paparan ini nanti di Live App.
+Hosting hands-on: **Cursor Origin** (bukan GitHub). Paparan interaktif: Live App di `presentation-app/`.
 
 Angka harga Cursor bisa berubah; cek [cursor.com/docs/models-and-pricing](https://cursor.com/docs/models-and-pricing) sebelum hari H.
 
@@ -47,20 +47,20 @@ Aturan bersama hidup di `.cursor/rules/` dan SOP di `knowledge-base/company/sop/
 
 | Paket | Harga (USD/bulan, sebelum pajak) | Catatan untuk workshop |
 | --- | --- | --- |
-| Plus | ~$8 | Pool dasar model Cursor; fitur terbatas |
-| Premium | ~$30 | 4× usage Plus; cloud agents; **Grok Bot** |
-| Super | ~$100 | 15× usage Plus; prioritas puncak |
-| Ultra | ~$200 | 50× usage Plus |
-| Teams | dari ~$30/seat | Sesuai tier seat |
+| Plus | $8 | Pool dasar; tanpa Origin / Grok Bot |
+| Premium | $30 | 4× usage; Origin; Grok Bot; cloud agents |
+| Super | $100 | 15× usage; prioritas puncak |
+| Ultra | $200 | 50× usage |
+| Teams | $30 / $100 / $200 per seat | Sesuai tier seat |
 
-Workshop memakai **akun berbayar per sub-fungsi** (Premium ke atas atau Teams) agar grokbot dan sync Origin lancar. Angka final mengikuti kontrak fasilitator.
+Workshop memakai **akun berbayar per sub-fungsi** (Premium ke atas atau Teams). Sumber: cursor.com/docs/models-and-pricing.
 
 ---
 
 ## Slide 5 — Harga / konsumsi per model
 
-- **Cursor models** (Grok 4.7 / 4.6 / 4.5, Composer): memakai pool usage paket.
-- **Third-party models**: biasanya di luar pool, ditagih harga API (Premium ke atas).
+- **Cursor models** (Grok 4.7 / 4.6 / 4.5, Composer 2.5): memakai pool usage paket.
+- **Third-party models**: di luar pool, ditagih harga API (Premium ke atas).
 - Tip praktek:
   - Iterasi cepat / sample CSV → model lebih ringan / Composer
   - Heavy lifting file penuh + keputusan → model lebih kuat
@@ -105,16 +105,16 @@ Satu sub-fungsi = satu laptop Cursor berbayar, beberapa peran agen, **satu appro
 
 ## Slide 9 — Org structure workshop
 
-| Sub-fungsi | Approver | Peran agen |
+| Sub-fungsi | Approver | Peran inti |
 | --- | --- | --- |
-| MRP | Antonny Fayen Budiman | KB + command center + weekly report |
+| MRP | Antonny Fayen Budiman | KB + command center + weekly |
 | Event | Endo Eko Satryo | Campaign calendar offline/online |
 | MBLP | Kania Hapsari | Jalur kreatif → content bank |
 | Digital | Fachrizal Imaduddin | Homeless media + jadwal tayang |
 
 VP Heppy Wulansari menyetujui output lintas fungsi. Leni mencatat keputusan VP.
 
-Visual: diagram org (lihat `slides/assets/illustrations/`).
+Visual: diagram org (`slides/assets/illustrations/flow-agentic-org.jpg`).
 
 ---
 
@@ -129,7 +129,12 @@ Visual: diagram org (lihat `slides/assets/illustrations/`).
 
 ## Slide 11 — Alur ujung ke ujung
 
-Sumber fiktif → MRP (KB + command center) → Event (calendar) → MBLP (kreatif → content bank) → Digital (homeless + jadwal) → kembali ke command center / weekly report.
+1. Sumber fiktif (`mock-data/`)
+2. MRP → KB + command center
+3. Event → campaign calendar
+4. MBLP → kreatif → content bank
+5. Digital → homeless media + jadwal
+6. Kembali ke command center / weekly report
 
 ---
 
@@ -139,6 +144,8 @@ Sumber fiktif → MRP (KB + command center) → Event (calendar) → MBLP (kreat
 - Jangan memasukkan data internal sungguhan
 - Jangan unggah konten atau ubah harga jual nyata
 - Jebakan ada di data; nilai = temuan yang ditahan untuk approval
+- Hands-on di Cursor Origin, bukan GitHub
+- Jangan baca `mock-data/solutions/`
 
 ---
 
@@ -149,4 +156,4 @@ Sumber fiktif → MRP (KB + command center) → Event (calendar) → MBLP (kreat
 3. Grill-me → Sesi 1
 
 Repo: Cursor Origin (bukan GitHub).  
-Paparan & brief: Live App (tautan di `slides/README.md` setelah publish).
+Paparan & brief: Live App (`presentation-app/`; URL di `slides/README.md` setelah publish).

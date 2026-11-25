@@ -1,6 +1,6 @@
 # Aturan untuk semua grokbot
 
-Repo ini adalah latihan workshop. Data di `mock-data/` fiktif. Jangan meminta atau menyimpan data internal perusahaan. Tidak ada publikasi, belanja, aktivasi, atau setting harga sungguhan.
+Folder ini adalah latihan workshop. Data di `mock-data/` fiktif. Jangan meminta atau menyimpan data internal perusahaan. Tidak ada publikasi, belanja, aktivasi, atau setting harga sungguhan.
 
 ## Peran organisasi
 

@@ -1,0 +1,133 @@
+{
+  "updated": "2026-11-25T14:40:00+07:00",
+  "updated_label": "25 Nov 2026, 14:40 WIB",
+  "note": "Semua waktu Asia/Jakarta (WIB). Routine otomatis agen. Mengubah jadwal di preview hanya membarui draf lokal; tidak membangunkan bot sungguhan.",
+  "items": [
+    {
+      "id": "sch-01",
+      "time": "07:30",
+      "days": "Senin–Jumat",
+      "routine": "Scan cuplikan competitor_prices_daily & offline_site_evaluation; tandai anomali ke draf kualitas data",
+      "owner": "Data Cleaner MRP",
+      "dept": "mrp",
+      "status": "Aktif"
+    },
+    {
+      "id": "sch-02",
+      "time": "08:00",
+      "days": "Senin–Jumat",
+      "routine": "Cek bentrok kalender EV001–EV005 dan daftar vendor/izin yang masih asumsi",
+      "owner": "Event Planner",
+      "dept": "event",
+      "status": "Aktif"
+    },
+    {
+      "id": "sch-03",
+      "time": "08:30",
+      "days": "Senin, Rabu, Jumat",
+      "routine": "Tarik caption lama vs brand guideline; sebut post_id yang klaim berlebihan",
+      "owner": "Content Planner / Writer",
+      "dept": "mblp",
+      "status": "Aktif"
+    },
+    {
+      "id": "sch-04",
+      "time": "09:00",
+      "days": "Senin–Jumat",
+      "routine": "Rekap engagement harian 5 akun fiktif; flag ambruk ke CoS Digital",
+      "owner": "Performance Reader",
+      "dept": "digital",
+      "status": "Aktif"
+    },
+    {
+      "id": "sch-05",
+      "time": "10:00",
+      "days": "Selasa, Kamis",
+      "routine": "Susun usulan slot homeless media dari inventori status available",
+      "owner": "Scheduler",
+      "dept": "digital",
+      "status": "Aktif"
+    },
+    {
+      "id": "sch-06",
+      "time": "11:00",
+      "days": "Senin",
+      "routine": "Ringkas conjoint + CSAT yang bertentangan dengan verbatim; jangan rata-rata mentah",
+      "owner": "Report Writer MRP",
+      "dept": "mrp",
+      "status": "Aktif"
+    },
+    {
+      "id": "sch-07",
+      "time": "13:00",
+      "days": "Senin–Jumat",
+      "routine": "Update status-report Event ke folder drafts; tidak mengedit KB bersama",
+      "owner": "CoS Event",
+      "dept": "event",
+      "status": "Aktif"
+    },
+    {
+      "id": "sch-08",
+      "time": "14:00",
+      "days": "Rabu",
+      "routine": "Review campaign plan draft vs pedoman merek; siap untuk Kania",
+      "owner": "CoS MBLP",
+      "dept": "mblp",
+      "status": "Aktif"
+    },
+    {
+      "id": "sch-09",
+      "time": "15:30",
+      "days": "Jumat",
+      "routine": "Susun draf analisis mingguan dari fakta yang sudah ditahan/disetujui; minta Antonny",
+      "owner": "CoS MRP",
+      "dept": "mrp",
+      "status": "Aktif"
+    },
+    {
+      "id": "sch-10",
+      "time": "16:00",
+      "days": "Senin–Jumat",
+      "routine": "Cocokkan kalender konten dengan campaign calendar Event; jangan unggah",
+      "owner": "CoS Digital",
+      "dept": "digital",
+      "status": "Aktif"
+    },
+    {
+      "id": "sch-11",
+      "time": "17:00",
+      "days": "Kamis",
+      "routine": "Checklist eksekusi lokasi + logistik EV minggu depan; tanpa holding statement",
+      "owner": "Event Planner",
+      "dept": "event",
+      "status": "Aktif"
+    },
+    {
+      "id": "sch-12",
+      "time": "20:00–22:00",
+      "days": "Selasa, Kamis",
+      "routine": "Shift kreatif: arahan KV dan revisi caption batch (hanya draf, menunggu Kania)",
+      "owner": "Creative Lead",
+      "dept": "mblp",
+      "status": "Aktif"
+    },
+    {
+      "id": "sch-13",
+      "time": "09:40",
+      "days": "Harian",
+      "routine": "Auto-post ke akun resmi dari draf belum approved",
+      "owner": "Scheduler",
+      "dept": "digital",
+      "status": "Dijeda"
+    },
+    {
+      "id": "sch-14",
+      "time": "12:00",
+      "days": "Harian",
+      "routine": "Kirim holding statement otomatis jika ada isu media",
+      "owner": "Comms Drafter",
+      "dept": "event",
+      "status": "Dijeda"
+    }
+  ]
+}

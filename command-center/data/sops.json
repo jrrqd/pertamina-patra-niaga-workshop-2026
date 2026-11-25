@@ -1,0 +1,110 @@
+{
+  "updated": "2026-11-25T14:00:00+07:00",
+  "status": "draft",
+  "items": [
+    {
+      "id": "sop-mrp-kb",
+      "dept": "mrp",
+      "title": "KB dan command center MRP",
+      "source_path": "knowledge-base/company/sop/sop_mrp_kb_command_center.md",
+      "summary": "MRP memelihara fakta bersama dan papan status. Fakta approved hanya setelah Antonny menyetujui.",
+      "steps": "Pisahkan sumber fiktif; tulis ringkasan; minta approval; perbarui command center; laporan mingguan hanya dari fakta approved."
+    },
+    {
+      "id": "sop-mrp-report",
+      "dept": "mrp",
+      "title": "Reporting",
+      "source_path": "knowledge-base/company/sop/sop_reporting.md",
+      "summary": "Laporan mingguan atau penutup Sesi 2. Angka yang bertentangan ditulis berdampingan.",
+      "steps": "Bandingkan sumber; jangan pilih satu angka tanpa manusia; Report Writer hanya pakai approved; Antonny tanda tangan."
+    },
+    {
+      "id": "sop-mrp-kb-hygiene",
+      "dept": "mrp",
+      "title": "Kebersihan knowledge base",
+      "source_path": "knowledge-base/company/sop/sop_kb_hygiene.md",
+      "summary": "Frontmatter wajib. Hanya CoS MRP yang menulis KB bersama.",
+      "steps": "Frontmatter; sebut path sumber; jangan timpa folder sub-fungsi lain; perbarui 00_index.md."
+    },
+    {
+      "id": "sop-ev-orch",
+      "dept": "event",
+      "title": "Orkestrasi kampanye Event",
+      "source_path": "knowledge-base/company/sop/sop_campaign_orchestration.md",
+      "summary": "Ide dan rencana penyelenggaraan: rundown, vendor, logistik, izin, eksekusi. Tanpa holding statement di soal v9.",
+      "steps": "Baca KB MRP; tulis calendar; picu MBLP dan Digital; kirim laporan status setelah Endo menyetujui."
+    },
+    {
+      "id": "sop-ev-press",
+      "dept": "event",
+      "title": "Press release dan isu (referensi)",
+      "source_path": "knowledge-base/company/sop/sop_press_release_dan_isu.md",
+      "summary": "Referensi internal. Soal workshop v9 tidak meminta holding statement.",
+      "steps": "Tandai rumor; jangan nyatakan sebagai fakta; Endo menyetujui sebelum dipakai sub-fungsi lain."
+    },
+    {
+      "id": "sop-mb-creative",
+      "dept": "mblp",
+      "title": "Jalur kreatif MBLP",
+      "source_path": "knowledge-base/company/sop/sop_creative_pipeline.md",
+      "summary": "Brief dan campaign plan lewat tahap planning → draft → creative → approval.",
+      "steps": "Urutan wajib; revisi setelah Kania; hanya item final masuk content bank; laporan status ke MRP."
+    },
+    {
+      "id": "sop-mb-social",
+      "dept": "mblp",
+      "title": "Konten social",
+      "source_path": "knowledge-base/company/sop/sop_content_social.md",
+      "summary": "Caption dan balasan komentar mengikuti brand guideline.",
+      "steps": "Baca brief; kelompokkan komentar; tahan data pribadi/politik; paket untuk Kania."
+    },
+    {
+      "id": "sop-dg-sched",
+      "dept": "digital",
+      "title": "Homeless media dan jadwal",
+      "source_path": "knowledge-base/company/sop/sop_digital_scheduling.md",
+      "summary": "Paket konten dan kalender konten dari content bank yang approved.",
+      "steps": "Baca performa; rencana homeless media; brief ke MBLP; jadwal dari calendar Event; tidak unggah sungguhan."
+    },
+    {
+      "id": "sop-dg-budget",
+      "dept": "digital",
+      "title": "Perubahan anggaran iklan",
+      "source_path": "knowledge-base/company/sop/sop_campaign_budget_change.md",
+      "summary": "Usulan jeda atau realokasi, bukan tindakan yang sudah dijalankan.",
+      "steps": "Diagnoser tandai kampanye; copywriter cek guideline; Fachrizal menyetujui usulan."
+    },
+    {
+      "id": "sop-all-approval",
+      "dept": "all",
+      "title": "Persetujuan manusia",
+      "source_path": "knowledge-base/company/sop/sop_human_approval.md",
+      "summary": "Draf, klaim, jadwal, dan angka tidak keluar tanpa persetujuan manusia.",
+      "steps": "Tahan yang meragukan; catat di log; manajer sub-fungsi menandatangani."
+    },
+    {
+      "id": "sop-all-handoff",
+      "dept": "all",
+      "title": "Handoff antar departemen",
+      "source_path": "knowledge-base/company/sop/sop_handoff_antar_departemen.md",
+      "summary": "Hanya CoS yang menulis handoff. Spesialis tidak membuat file handoff.",
+      "steps": "Tulis file handoff; ringkasan + path/id; status draft atau pending_approval."
+    },
+    {
+      "id": "sop-all-sync",
+      "dept": "all",
+      "title": "Sinkron dan status report",
+      "source_path": "knowledge-base/company/sop/sop_sync_dan_status_report.md",
+      "summary": "Baca KB dulu; kerjakan draf di folder sendiri; kirim status ke MRP.",
+      "steps": "Baca command center; jangan bertentangan dengan approved; tulis status-report; baca ulang."
+    },
+    {
+      "id": "sop-all-data",
+      "dept": "all",
+      "title": "Data dan keamanan",
+      "source_path": "knowledge-base/company/sop/sop_data_dan_keamanan.md",
+      "summary": "Hanya data latihan. Jangan copy paste data internal asli.",
+      "steps": "Pakai mock-data; jangan salin telepon/KTP; jangan aktifkan kampanye sungguhan."
+    }
+  ]
+}

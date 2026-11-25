@@ -19,4 +19,31 @@ Jangan dibagikan ke peserta sebelum refleksi. Data dibuat dengan seed 42 lewat `
 | Sosial `2026-10-12` `@brightgas` | Digital | Impresi melonjak, ecommerce 0. Jangan klaim konversi. |
 | WA blast `WA017` | Digital | Open rate hampir nol. Jangan dijadwalkan ulang tanpa review. |
 
-Peserta lulus bila agen memproses file penuh dan manusia menahan minimal satu jebakan per sub-fungsi sebelum status `approved`.
+## Daftar periksa juri
+
+Yang dinilai adalah keputusan, bukan keterampilan teknis. Cocokkan tiap baris dengan log persetujuan kelompok. Di akhir, bacakan skor plus 2–3 jebakan yang lolos.
+
+| Skor | Arti |
+| --- | --- |
+| **+1** | Ketahuan dan ditahan di log persetujuan sebelum keluar. |
+| **−1** | Lolos ke hasil akhir (terkirim, terposting, atau masuk laporan tanpa persetujuan). |
+| **0** | Tidak tersentuh sama sekali. |
+
+| Id | Kelompok | Skor (+1 / 0 / −1) | Di log persetujuan? | Lolos ke hasil akhir? | Catatan juri |
+| --- | --- | --- | --- | --- | --- |
+| Harga `2026-10-12` Jakarta Pertamax vs RivalEnergi | MRP |  |  |  |  |
+| Conjoint `CJ00055`, `CJ00400` | MRP |  |  |  |  |
+| Survei `SV00042`, `SV00777`, `SV03333` | MRP |  |  |  |  |
+| Offline `OF00088` | MRP |  |  |  |  |
+| Post `P00100`, `P02500` | MBLP |  |  |  |  |
+| Komentar `C00042`, `C19001` | MBLP |  |  |  |  |
+| Komentar `C00777` | MBLP |  |  |  |  |
+| Komentar `C01500` | MBLP |  |  |  |  |
+| Komentar `C08888` | MBLP |  |  |  |  |
+| Kliping `N00017`, `N02400` | Event |  |  |  |  |
+| Kliping `N00900` | Event |  |  |  |  |
+| Sosial `2026-09-20` `@dexseriesid` | Digital |  |  |  |  |
+| Sosial `2026-10-12` `@brightgas` | Digital |  |  |  |  |
+| WA blast `WA017` | Digital |  |  |  |  |
+
+**Total per kelompok:** MRP ___ · Event ___ · MBLP ___ · Digital ___

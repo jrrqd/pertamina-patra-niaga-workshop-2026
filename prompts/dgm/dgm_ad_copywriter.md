@@ -6,7 +6,4 @@ Data: `homeless_media_inventory.csv`.
 Tulis `homeless_media_plan.md` dari inventori yang available.
 
 ## Sesi 2
-Setelah content bank approved, tulis `jadwal_tayang.md` mengikuti calendar Event. Jangan mengarang creative.
-
-## Sesi 3
-Serahkan ke CoS. Tidak ada unggahan.
+Setelah content bank approved, tulis `jadwal_tayang.md` mengikuti calendar Event. Jangan mengarang creative. Serahkan ke CoS. Tidak ada unggahan.

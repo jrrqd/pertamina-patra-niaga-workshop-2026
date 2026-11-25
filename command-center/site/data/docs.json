@@ -1,0 +1,158 @@
+{
+  "updated": "2026-11-25T14:45:00+07:00",
+  "updated_label": "25 Nov 2026, 14:45 WIB",
+  "title": "Dokumentasi command center",
+  "summary": "Penjelasan ringkas struktur organisasi latihan dan SOP agen. Isi SOP panjang tidak disalin; path sumber ada di knowledge-base/company/sop/.",
+  "sections": [
+    {
+      "id": "org",
+      "heading": "Struktur organisasi",
+      "source_path": "knowledge-base/company/orgstructure.md",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Peserta tetap di sub-fungsi aslinya. Dua grup A dan B per sub-fungsi mengerjakan soal yang sama. Peserta hanya bicara dengan Chief of Staff; spesialis bekerja di belakang."
+        },
+        {
+          "type": "text",
+          "text": "Alur kerja: sumber fiktif → MRP (KB & command center) → Event (campaign calendar) → MBLP (jalur kreatif & content bank) dan Digital (homeless media & jadwal tayang) → laporan status kembali ke MRP."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "MRP — satu-satunya penulis KB bersama dan command center. Approver: Antonny Fayen Budiman.",
+            "Event — ide & rencana penyelenggaraan (rundown, vendor, logistik, izin, eksekusi). Approver: Endo Eko Satryo. Soal v9 tanpa holding statement.",
+            "MBLP — brief dan campaign plan sesuai pedoman merek. Approver: Kania Hapsari.",
+            "Digital — paket konten dan kalender konten. Approver: Fachrizal Imaduddin.",
+            "VP Heppy Wulansari — materi lintas fungsi. Leni mencatat keputusan di knowledge-base/decisions/."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Eskalasi: spesialis → CoS → manajer sub-fungsi → VP bila konflik lintas fungsi atau rilis publik. Roster: knowledge-base/company/roster.md."
+        }
+      ]
+    },
+    {
+      "id": "agents",
+      "heading": "Peran agen per sub-fungsi",
+      "source_path": "knowledge-base/company/orgstructure.md",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Setiap sub-fungsi punya satu CoS (pintu masuk) dan spesialis. Profil prompt ada di prompts/<dept>/."
+        },
+        {
+          "type": "agent_cards",
+          "dept": "mrp"
+        },
+        {
+          "type": "agent_cards",
+          "dept": "event"
+        },
+        {
+          "type": "agent_cards",
+          "dept": "mblp"
+        },
+        {
+          "type": "agent_cards",
+          "dept": "digital"
+        }
+      ]
+    },
+    {
+      "id": "sop-agents",
+      "heading": "SOP agen (ringkas)",
+      "source_path": "knowledge-base/company/sop/",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Jangan menyalin isi SOP utuh ke chat. Baca path sumber. Ringkasan di bawah hanya untuk orientasi di command center."
+        },
+        {
+          "type": "sop_ref",
+          "title": "KB dan command center MRP",
+          "path": "knowledge-base/company/sop/sop_mrp_kb_command_center.md",
+          "for": "CoS MRP, Data Cleaner, Report Writer",
+          "summary": "Pisahkan sumber fiktif; fakta approved hanya setelah Antonny; sub-fungsi lain tidak menulis KB bersama."
+        },
+        {
+          "type": "sop_ref",
+          "title": "Orkestrasi kampanye Event",
+          "path": "knowledge-base/company/sop/sop_campaign_orchestration.md",
+          "for": "CoS Event, Event Planner",
+          "summary": "Tulis calendar; picu MBLP dan Digital; jangan konten final; laporan status ke MRP setelah Endo menyetujui."
+        },
+        {
+          "type": "sop_ref",
+          "title": "Jalur kreatif MBLP",
+          "path": "knowledge-base/company/sop/sop_creative_pipeline.md",
+          "for": "CoS MBLP, Content Writer, Creative Lead",
+          "summary": "Urutan planning → draft → creative → approval; hanya item final masuk content bank."
+        },
+        {
+          "type": "sop_ref",
+          "title": "Homeless media dan jadwal Digital",
+          "path": "knowledge-base/company/sop/sop_digital_scheduling.md",
+          "for": "CoS Digital, Performance Reader, Scheduler",
+          "summary": "Brief ke MBLP; ambil hanya content bank approved; jangan unggah sungguhan."
+        },
+        {
+          "type": "sop_ref",
+          "title": "Persetujuan manusia",
+          "path": "knowledge-base/company/sop/sop_human_approval.md",
+          "for": "Semua agen",
+          "summary": "Draf, klaim, jadwal, angka tidak keluar tanpa persetujuan manusia. Agen tidak set approved sendiri."
+        },
+        {
+          "type": "sop_ref",
+          "title": "Sinkron dan status report",
+          "path": "knowledge-base/company/sop/sop_sync_dan_status_report.md",
+          "for": "Semua CoS",
+          "summary": "Baca KB dulu; kerjakan draf di folder sendiri; kirim status-report ke MRP; baca ulang command center."
+        },
+        {
+          "type": "sop_ref",
+          "title": "Data dan keamanan",
+          "path": "knowledge-base/company/sop/sop_data_dan_keamanan.md",
+          "for": "Semua agen",
+          "summary": "Hanya mock-data; jangan salin telepon/KTP; jangan copy paste data internal asli."
+        }
+      ]
+    },
+    {
+      "id": "house-rules",
+      "heading": "House rules workshop",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Satu bot, satu tugas.",
+            "Satu pintu masuk: peserta hanya bicara dengan CoS.",
+            "Tidak ada yang keluar tanpa persetujuan manusia.",
+            "Jangan copy paste data internal Pertamina yang asli; pakai data latihan saja.",
+            "Teks peserta: kata temuan, bukan jebakan. Sapa peserta, bukan Bapak/Ibu (kecuali nama seperti Ibu Heppy)."
+          ]
+        }
+      ]
+    }
+  ],
+  "agent_blurbs": {
+    "mrp-approver": "Manusia. Menyetujui fakta KB, analisis, dan laporan angka.",
+    "mrp-cos": "Pintu masuk MRP. Satu-satunya penulis KB bersama dan command center. Prompt: prompts/mrp/mrp_chief_of_staff.md",
+    "mrp-cleaner": "Rapikan CSV fiktif; tandai anomali dengan id/tanggal. Prompt: prompts/mrp/mrp_data_cleaner.md",
+    "mrp-writer": "Susun analisis/laporan dari fakta yang sudah dicek. Prompt: prompts/mrp/mrp_report_writer.md",
+    "ev-approver": "Manusia. Menyetujui ide dan rencana penyelenggaraan event.",
+    "ev-cos": "Orkestrator Event; calendar dan laporan status ke MRP. Prompt: prompts/evm/evm_chief_of_staff.md",
+    "ev-planner": "Rundown, vendor, logistik, izin, eksekusi. Prompt: prompts/evm/evm_event_planner.md",
+    "ev-comms": "Batas pesan acara (soal v9: tanpa holding statement). Prompt: prompts/evm/evm_comms_drafter.md",
+    "mb-approver": "Manusia. Menyetujui brief dan campaign plan.",
+    "mb-cos": "Menjaga urutan jalur kreatif; laporan status ke MRP. Prompt: prompts/mblp/mblp_chief_of_staff.md",
+    "mb-writer": "Planning dan draft caption/campaign. Prompt: prompts/mblp/mblp_content_writer.md",
+    "mb-creative": "Arahan creative dan content bank. Prompt: prompts/mblp/ (creative / loyalty).",
+    "dg-approver": "Manusia. Menyetujui paket konten dan kalender.",
+    "dg-cos": "Homeless media, brief ke MBLP, jadwal tayang. Prompt: prompts/dgm/dgm_chief_of_staff.md",
+    "dg-perf": "Baca reach, impression, engagement. Prompt: prompts/dgm/dgm_diagnoser.md",
+    "dg-sched": "Menyesuaikan content bank dengan calendar Event. Prompt: prompts/dgm/ (scheduler)."
+  }
+}

@@ -1,46 +1,79 @@
 # Silabus — Membangun Organisasi Agentic AI untuk Marketing
 
-**Fungsi Marketing, Pertamina Patra Niaga · 27 November 2026 · hands-on 2,5 jam**
+**Fungsi Marketing, Pertamina Patra Niaga · 27 November 2026 · 2,5 jam**  
+**Pembicara:** Rizki Suluh Adi
 
-Peserta duduk di sub-fungsi aslinya. Tiap sub-fungsi memegang satu akun Cursor berbayar. Market Research & Pricing memelihara knowledge base dan command center. Event mengorkestrasi campaign calendar. MBLP menjalankan jalur kreatif. Digital menjadwalkan content bank ke homeless media. Manager dan VP tetap yang menyetujui yang keluar.
+Peserta duduk di sub-fungsi aslinya. Tiap sub-fungsi memakai satu akun yang sudah masuk. Peserta hanya berbicara dengan Chief of Staff. Dua spesialis per kelompok sudah disiapkan. Manager dan VP tetap yang menyetujui apa yang keluar.
 
 ## Hasil yang dibawa pulang
 
-- Satu grokbot Chief of Staff dan dua spesialis per sub-fungsi, dengan peran tertulis.
-- Satu alur kerja ujung ke ujung: KB dan command center, campaign calendar, jalur kreatif, jadwal tayang, laporan mingguan.
-- Jejak keputusan manager dan VP di knowledge base, bisa dibaca kapan saja di Cursor.
+- Satu Chief of Staff dan dua spesialis per sub-fungsi, dengan peran tertulis.
+- Satu alur kerja kampanye fiktif: data, kalender, materi kreatif, jadwal tayang, lalu laporan mingguan.
+- Jejak keputusan manager dan VP di log persetujuan, bisa dibaca kembali.
 
-## Rundown
+## Rundown (150 menit, dua sesi)
 
 | Waktu | Kegiatan |
 | --- | --- |
-| 30 menit | Paparan: organisasi agen, aturan main, dan brief kampanye fiktif B2C retail |
-| 15 menit | Setup Cursor, repo bersama, dan prompt kickoff |
-| 30 menit | Sesi 1. MRP mengisi KB. Event membuat campaign calendar. MBLP sampai draf kreatif. Digital menyiapkan homeless media |
-| 10 menit | Jeda dan cek progres |
-| 40 menit | Sesi 2. Event mengorkestrasi. MBLP merevisi sampai approval. Digital meminta brief dan memakai content bank |
-| 20 menit | Sesi 3. Satu kampanye dijalankan ujung ke ujung. CoS menunjukkan file masuk dan keluar. MRP memperbarui KB dan command center |
-| 5 menit | Refleksi: apa yang didelegasikan, apa yang tetap diputuskan manusia |
+| 00–25 | Paparan. Buka dengan contoh promo jebakan. Perlihatkan tim bot yang dipakai pembicara. Tiga aturan rumah: satu bot satu tugas, satu pintu masuk, tidak ada yang keluar tanpa persetujuan manusia. |
+| 25–35 | Setup. Akun sudah masuk. Peserta membuka Chief of Staff dan kartu tempel bernomor. |
+| 35–70 | Sesi 1. Beri brief ke Chief of Staff. Selesaikan draf awal. Minta persetujuan pertama ke manajer, catat di log persetujuan. |
+| 70–80 | Jeda. |
+| 80–130 | Sesi 2. Kampanye berjalan melalui sekitar empat langkah. Tiap langkah ada jebakan di data. Tahan yang meragukan, minta persetujuan manusia. |
+| 130–145 | Laporan mingguan MRP. Di layar tampil ringkasan satu halaman dan log persetujuan tiap manajer. |
+| 145–150 | Refleksi. Tiap manajer menyebut satu tugas nyata yang ingin dicoba. |
+
+## Tiga aturan rumah
+
+1. **Satu bot, satu tugas.** Jangan minta satu bot mengerjakan semua peran.
+2. **Satu pintu masuk.** Peserta hanya berbicara dengan Chief of Staff. Spesialis bekerja di belakang.
+3. **Tidak ada yang keluar tanpa persetujuan manusia.** Draf, jadwal, klaim, atau laporan tidak boleh berangkat sendiri.
 
 ## Empat kelompok
 
-| Sub-fungsi | Approver | Peran di organisasi agen |
+| Sub-fungsi | Approver | Peran di organisasi |
 | --- | --- | --- |
-| Market Research & Pricing | Antonny Fayen Budiman | Pemilik KB dan command center. Sumber internal dan publik. Laporan mingguan |
-| Event Management | Endo Eko Satryo | Orkestrator kampanye offline dan online. Pemilik campaign calendar |
-| Marketing, Brand & Loyalty | Kania Hapsari | Jalur kreatif: planning, draft, creative, revisi, approval, final |
-| Digital Marketing | Fachrizal Imaduddin | Homeless media, brief ke kreatif, jadwal tayang content bank |
+| Market Research & Pricing | Antonny Fayen Budiman | Penjaga data bersama dan papan status. Sumber latihan internal dan publik. Laporan mingguan |
+| Event Management | Endo Eko Satryo | Pengatur kalender kampanye, luring dan daring |
+| Marketing, Brand & Loyalty | Kania Hapsari | Jalur kreatif: perencanaan, draf, revisi, persetujuan, materi final |
+| Digital Marketing | Fachrizal Imaduddin | Media yang tersedia, brief ke kreatif, jadwal tayang |
 
-Admin Marketing Support duduk bersama sub-fungsi yang mereka dukung. Heppy Wulansari, VP Marketing & Brand Management, menyetujui output lintas fungsi. Leni Nur Indah Sari mencatat keputusan VP. Hanya CoS MRP yang menulis knowledge base bersama dan command center. Sub-fungsi lain membaca KB, mengerjakan draf di foldernya, lalu mengirim laporan status ke MRP.
+Admin Marketing Support duduk bersama sub-fungsi yang mereka dukung. Heppy Wulansari, VP Marketing & Brand Management, menyetujui **satu kali** untuk output lintas fungsi yang akan keluar. Leni Nur Indah Sari mencatat keputusan VP. Hanya Chief of Staff MRP yang menulis data bersama dan papan status. Sub-fungsi lain membaca, mengerjakan draf di foldernya, lalu mengirim laporan status ke MRP.
+
+Kartu kerja peserta bernomor, siap tempel ke Chief of Staff: `prompts/slides/`.
 
 ## Skenario
 
-Satu kampanye fiktif produk B2C retail (fuel, LPG, atau MyPertamina). Data, media, dan angka bukan data internal. Tidak ada publikasi, belanja, aktivasi, atau setting harga sungguhan.
+Satu kampanye fiktif produk ritel (BBM, LPG, atau MyPertamina). Data, media, dan angka bukan data internal. Tidak ada publikasi, belanja, aktivasi, atau perubahan harga sungguhan.
 
-Alur: MRP mengisi KB dari sumber internal dan publik fiktif. Event menulis campaign calendar. MBLP menjalankan jalur kreatif sampai content bank. Digital meminta brief, lalu menjadwalkan tayang. Semua status masuk command center. MRP menutup dengan laporan mingguan contoh.
+Alur: MRP merangkum data latihan. Event menulis kalender kampanye. MBLP menjalankan jalur kreatif sampai materi final. Digital meminta brief, lalu menyusun jadwal tayang. Semua status masuk papan. MRP menutup dengan contoh laporan mingguan.
 
-Di dalam data ada jebakan: klaim yang melanggar guideline, data pribadi, rumor, dan angka yang saling bertentangan. Peserta dinilai dari temuan yang ditahan untuk approval, bukan dari kecepatan agen selesai.
+Di dalam data ada jebakan: klaim yang melanggar pedoman, data pribadi, rumor, dan angka yang saling bertentangan.
+
+## Cara penilaian
+
+Yang dinilai adalah **keputusan**, bukan kecepatan atau keterampilan teknis.
+
+Rizki menjadi juri. Acuan: daftar periksa di `mock-data/solutions/traps.md`, dicocokkan dengan log persetujuan tiap kelompok.
+
+| Skor | Arti |
+| --- | --- |
+| **+1** | Jebakan ketahuan dan ditahan di log persetujuan sebelum keluar. |
+| **−1** | Jebakan lolos ke hasil akhir: terkirim, terposting, atau masuk laporan tanpa persetujuan. |
+| **0** | Jebakan tidak tersentuh sama sekali. |
+
+Di akhir, skor dibacakan bersama 2–3 contoh jebakan yang lolos. Pesan utamanya: kerja bisa cepat, tetapi manusia tetap pegang keputusan.
 
 ## Yang disiapkan fasilitator
 
-Empat akun Cursor berbayar, repo di **Cursor Origin**, Live App paparan/brief dengan prompt siap tempel, dan mock data plus cuplikan 100 baris. Tidak memakai GitHub atau Canva.
+Empat akun sudah masuk, satu per sub-fungsi. Chief of Staff dan dua spesialis sudah terbentuk. Kartu tempel bernomor. Data latihan plus cuplikan pendek. Kunci jebakan hanya untuk juri.
+
+Paparan tidak membahas harga paket, cara kerja teknis, atau langkah menyalin folder.
+
+## Persiapan (belum dikonfirmasi)
+
+- Cek laptop dan internet di lokasi bersama IT Patra Niaga.
+- Konfirmasi jumlah peserta.
+- Siapkan cadangan PDF dan rekaman demo, kalau jaringan bermasalah.
+
+Rizki konfirmasi besok.

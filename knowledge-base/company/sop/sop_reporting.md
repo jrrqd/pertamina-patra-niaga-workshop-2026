@@ -8,7 +8,7 @@ tags: [sop, analytics]
 
 # SOP reporting
 
-**Pemicu.** Permintaan laporan mingguan atau laporan sesi 3.
+**Pemicu.** Permintaan laporan mingguan atau laporan penutup setelah Sesi 2.
 
 **Langkah.**
 
