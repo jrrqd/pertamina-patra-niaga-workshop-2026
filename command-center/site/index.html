@@ -13,11 +13,15 @@
 </head>
 <body>
 <a class="skip" href="#main" data-i18n="skip">Lewati ke konten</a>
+<div class="brand-bar" aria-hidden="true"></div>
 <header class="top">
   <div class="top-inner">
     <a class="brand" href="#ikhtisar">
       <img class="brand-logo" src="assets/pertamina-patra-niaga.webp" width="140" height="36" alt="Pertamina Patra Niaga">
-      <span class="brand-t">Command Center</span>
+      <span class="brand-stack">
+        <span class="brand-t">Command Center</span>
+        <span class="brand-live"><i aria-hidden="true"></i> <span data-i18n="live_label">Mission Control</span></span>
+      </span>
     </a>
     <nav id="tabs" class="tabs" aria-label="Halaman" data-i18n-aria="nav_aria">
       <a href="#ikhtisar" data-tab="ikhtisar" data-i18n="tab_overview">Ikhtisar</a>
@@ -29,6 +33,10 @@
       <a href="#masukan" data-tab="masukan" data-i18n="tab_feedback">Masukan ke agen</a>
     </nav>
     <div class="top-actions">
+      <button id="cmdk-open" type="button" class="cmdk-trigger" aria-label="Cari / Pindah" data-i18n-aria="cmdk_aria">
+        <span data-i18n="cmdk_trigger">Cari / Pindah</span>
+        <kbd>⌘K</kbd>
+      </button>
       <div id="lang" class="lang-toggle" role="group" aria-label="Bahasa" data-i18n-aria="lang_aria">
         <button type="button" class="lang-btn" data-lang="id" aria-pressed="true">ID</button>
         <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
@@ -56,6 +64,7 @@
   <div id="tour-spot" class="tour-spot" aria-hidden="true"></div>
   <div id="tour-card" class="tour-card" role="dialog" aria-modal="true" aria-labelledby="tour-title">
     <p class="tour-step"><span id="tour-step-n">1</span>/<span id="tour-step-total">8</span></p>
+    <div class="tour-progress" aria-hidden="true"><i id="tour-progress-bar"></i></div>
     <h2 id="tour-title"></h2>
     <p id="tour-body"></p>
     <div class="tour-actions">
@@ -66,6 +75,13 @@
   </div>
 </div>
 
+<dialog id="cmdk" aria-label="Command palette">
+  <div class="cmdk-search">
+    <input id="cmdk-input" type="search" autocomplete="off" spellcheck="false" data-i18n-placeholder="cmdk_ph" placeholder="Cari grup, tab, agen, SOP…">
+  </div>
+  <div id="cmdk-list" class="cmdk-list" role="listbox"></div>
+</dialog>
+
 <main id="main" class="wrap">
   <p id="banner" class="banner" role="status" data-i18n="banner">Peserta memilih kode grup di kanan atas. Semua perubahan tersimpan sebagai draf. Isi bebas bahasa apa saja; hanya antarmuka yang diganti ID/EN.</p>
 
@@ -73,6 +89,11 @@
     <div class="sec-head">
       <h1 data-i18n="overview_title">Ikhtisar semua sub-fungsi</h1>
       <p class="muted" data-i18n="overview_lead">Lihat keempat sub-fungsi dan seluruh agen sekaligus. Pilih kartu untuk pindah ke grup A sub-fungsi itu.</p>
+    </div>
+    <div id="kpi-strip" class="kpi-strip" aria-live="polite"></div>
+    <div class="pipeline">
+      <p class="pipeline-title" data-i18n="pipeline_title">Alur kerja lintas sub-fungsi</p>
+      <div id="pipeline-track" class="pipeline-track"></div>
     </div>
     <div class="seg" role="group" aria-label="Mode ikhtisar">
       <button type="button" class="seg-btn on" data-overview="depts" data-i18n="overview_depts">Semua sub-fungsi</button>
@@ -98,6 +119,10 @@
         <p class="muted" data-i18n="task_board_lead">Pekerjaan yang sedang dipegang agen. Teks tugas tidak diterjemahkan.</p>
       </div>
       <div class="row-actions">
+        <div class="seg" role="group" aria-label="Tampilan tugas">
+          <button type="button" class="seg-btn on" data-task-view="kanban" data-i18n="view_kanban">Board Kanban</button>
+          <button type="button" class="seg-btn" data-task-view="table" data-i18n="view_table">Tabel</button>
+        </div>
         <label class="inline">
           <span data-i18n="task_filter">Tampilkan</span>
           <select id="task-filter">
@@ -108,7 +133,8 @@
         <span id="task-count" class="muted count"></span>
       </div>
     </div>
-    <div class="table-wrap">
+    <div id="task-kanban" class="kanban"></div>
+    <div id="task-table-wrap" class="table-wrap" hidden>
       <table class="ptable" id="task-table">
         <thead>
           <tr>
@@ -136,6 +162,10 @@
     <p id="schedule-note" class="callout"></p>
     <p id="schedule-msg" class="msg" role="status"></p>
     <div class="filters panel">
+      <div class="seg" role="group" aria-label="Tampilan jadwal">
+        <button type="button" class="seg-btn on" data-schedule-view="timeline" data-i18n="view_timeline">Timeline WIB</button>
+        <button type="button" class="seg-btn" data-schedule-view="table" data-i18n="view_table">Tabel</button>
+      </div>
       <label class="inline">
         <span data-i18n="schedule_filter">Tampilkan</span>
         <select id="schedule-filter">
@@ -146,7 +176,8 @@
       <button id="schedule-reload" type="button" class="btn" data-i18n="reload">Muat ulang</button>
       <span id="schedule-count" class="muted count"></span>
     </div>
-    <div class="table-wrap">
+    <div id="schedule-timeline" class="timeline"><div class="timeline-inner" id="timeline-inner"></div></div>
+    <div id="schedule-table-wrap" class="table-wrap" hidden>
       <table class="ptable" id="schedule-table">
         <thead>
           <tr>
@@ -200,6 +231,7 @@
       </div>
       <div class="row-actions">
         <button id="org-add" type="button" class="btn btn-primary" data-i18n="org_add">+ Peran</button>
+        <button id="org-autolayout" type="button" class="btn" data-i18n="org_autolayout">Rapikan otomatis</button>
         <button id="org-save" type="button" class="btn" data-i18n="org_save">Simpan canvas</button>
         <button id="org-reload" type="button" class="btn" data-i18n="reload">Muat ulang</button>
       </div>
