@@ -9,6 +9,13 @@ presentation-app/dist/
 fasilitator-only/
 mock-data/solutions/
 generated_images/
+_arsip-lama/
+slides/
+presentation-app/
+HANDOVER-CURSOR.md
+HANDOVER-CODEX.md
+prompts/slides/
+command-center/site/assets/deck/
 *.pptx
 *.tgz
 *.bundle

@@ -55,18 +55,16 @@ Heppy Wulansari menyetujui **satu kali** untuk output lintas fungsi. Hanya Chief
 ## Isi folder
 
 - `knowledge-base/` — fakta, papan status, draf, laporan status, laporan mingguan
-- `prompts/` — peran spesialis (sudah disiapkan) dan kartu tempel bernomor di `prompts/slides/`
+- `prompts/` — peran spesialis
+- `rev6-kartu/` — kartu yang ditempel peserta
 - `mock-data/mrp|event|mblp|digital/` — data latihan + cuplikan pendek
 - `mock-data/digital/influencer-screens/` — 50 profil Instagram fiktif untuk soal Digital
-- `slides/` — kerangka paparan 25 menit dan brief sub-fungsi
-- `presentation-app/` — layar paparan, brief, dan ringkasan akhir
 - `AGENTS.md` — aturan untuk semua bot
-- `_arsip-lama/` — rencana lama 24 Nov, jangan dipakai sebagai acuan
 
 ## Cara kerja peserta
 
 1. Akun sudah masuk. Buka Chief of Staff kelompok Anda.
-2. Tempel kartu 0 (`prompts/00_kickoff.md`), lalu kartu Sesi 1 dan Sesi 2 di `prompts/slides/`.
+2. Tempel Kartu 0, lalu kartu Sesi 1 dan Sesi 2 dari `rev6-kartu/kartu/`.
 3. Manajer memberi persetujuan pertama di Sesi 1, lalu persetujuan berikutnya di Sesi 2. Catat di log persetujuan.
 4. Jangan anggap materi selesai atau tayang sebelum manusia setuju.
 5. VP Heppy menyetujui satu kali bila hasilnya lintas fungsi.
