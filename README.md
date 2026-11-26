@@ -1,25 +1,37 @@
 # Workshop 27 Nov 2026 — Organisasi Agentic AI untuk Marketing
 
-Hands-on 2,5 jam untuk Fungsi Marketing Pertamina Patra Niaga.  
-**Pembicara:** Rizki Suluh Adi
+Hands-on 150 menit untuk Fungsi Marketing Pertamina Patra Niaga. Jumat, 27 November 2026.  
+**Pembicara:** Rizki Suluh Adi dan Dwika Putra.
 
-Empat sub-fungsi asli memakai satu akun yang sudah masuk. Peserta hanya berbicara dengan Chief of Staff. Spesialis sudah disiapkan. MRP menjaga data bersama dan papan status. Event mengatur kalender kampanye. MBLP menjalankan jalur kreatif. Digital menyusun jadwal tayang.
+Delapan grup, dua per subfungsi (A dan B), soal dan data yang sama. Peserta hanya berbicara dengan Chief of Staff. Data latihan fiktif. Tidak ada publikasi, belanja, atau perubahan harga sungguhan.
 
-Semua data fiktif. Tidak ada publikasi, belanja, aktivasi, atau perubahan harga sungguhan.
+- Slide materi (rev8): https://docs.google.com/presentation/d/12aWtL3TZFSdtq8syDsEciFU4vO8d_LDj1pK0KY_fbSE/edit
+- Template Command Center: https://github.com/jrrqd/grokbot-command-center
+- Silabus ringkas: `SILABUS.md`. Kartu peserta: `rev6-kartu/`.
 
-## Rundown (150 menit, dua sesi)
+## Rundown (silabus v9)
 
-| Waktu | Kegiatan |
+| Menit | Kegiatan |
 | --- | --- |
-| 00–25 | Paparan: promo jebakan, tim bot pembicara, tiga aturan rumah |
-| 25–35 | Setup: akun sudah masuk, kartu tempel ke Chief of Staff |
-| 35–70 | Sesi 1: brief ke Chief of Staff, persetujuan pertama |
-| 70–80 | Jeda |
-| 80–130 | Sesi 2: sekitar empat langkah, satu jebakan di tiap langkah |
-| 130–145 | Laporan mingguan MRP, ringkasan satu halaman dan log persetujuan tiap manajer |
-| 145–150 | Refleksi: tiap manajer menyebut satu tugas nyata yang ingin dicoba |
+| 00–10 | Pembukaan |
+| 10–20 | Dwika: kenapa dan kapan perlu AI |
+| 20–30 | Rizki: alat, vibecoding, demo live-build |
+| 30–40 | Setup Cursor Web dan Kartu 0 |
+| 40–80 | Sesi 1: petakan, pecah, pilih, house rules |
+| 80–90 | Jeda |
+| 90–130 | Sesi 2: temuan menit 90, 100, 110, 120 |
+| 130–150 | Presentasi dan refleksi, dipandu Ibu Heppy |
 
-Silabus lengkap dan cara penilaian: `SILABUS.md`.
+Tidak ada sesi laporan terpisah dan tidak ada pemilihan pilot. Skor: +1 temuan ditahan, −1 lolos, 0 tidak tersentuh. Pemenang per pasangan.
+
+## Contoh soal
+
+| Subfungsi | Approver | Hasil |
+| --- | --- | --- |
+| MRP | Antonny Fayen Budiman | Analisis data latihan, bukan memo harga |
+| Event | Endo Eko Satryo | Ide dan rencana penyelenggaraan, tanpa holding |
+| MBLP | Kania Hapsari | Brief dan campaign plan |
+| Digital | Fachrizal Imaduddin | Paket konten, kalender, sortir 50 profil fiktif (minimal 1000 follower) |
 
 ## Tiga aturan rumah
 
@@ -45,7 +57,7 @@ Heppy Wulansari menyetujui **satu kali** untuk output lintas fungsi. Hanya Chief
 - `knowledge-base/` — fakta, papan status, draf, laporan status, laporan mingguan
 - `prompts/` — peran spesialis (sudah disiapkan) dan kartu tempel bernomor di `prompts/slides/`
 - `mock-data/mrp|event|mblp|digital/` — data latihan + cuplikan pendek
-- `mock-data/solutions/traps.md` — kunci dan daftar periksa juri
+- `mock-data/digital/influencer-screens/` — 50 profil Instagram fiktif untuk soal Digital
 - `slides/` — kerangka paparan 25 menit dan brief sub-fungsi
 - `presentation-app/` — layar paparan, brief, dan ringkasan akhir
 - `AGENTS.md` — aturan untuk semua bot

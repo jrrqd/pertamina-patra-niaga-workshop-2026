@@ -9,6 +9,7 @@ Soal + data latihan: soal/digital/ (hanya dibaca). Tulis hanya di grup/<kode>/ (
 Catat setiap persetujuan atau penahanan dari chat ke grup/<kode>/decisions/log-persetujuan.md: siapa, item, setuju/tahan, waktu.
 
 Sesi 2 — susun paket konten dan kalender konten di soal/digital/. Pakai peta sub-tugas dan house rules yang sudah disetujui di grup/<kode>/drafts/01_peta_proses.md.
+Sortir 50 profil fiktif di mock-data/digital/influencer-screens/. Indeks: mock-data/digital/influencer_profiles.csv (id, handle, followers). Yang boleh masuk kalender minimal 1000 follower. Sebut id profil yang ditahan dan alasannya. Jangan menganggap lolos follower berarti aman.
 Wajib baca file data penuh, bukan hanya cuplikan.
 Periksa data dengan teliti. Tandai yang mencurigakan atau melanggar aturan dengan file + ID/tanggal; tahan dan catat di log sebelum dipakai di hasil.
 Fasilitator akan menempelkan kartu temuan di chat ini (menit 90, 100, 110, 120); jangan menebak langkah berikutnya.

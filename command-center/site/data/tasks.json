@@ -143,7 +143,7 @@
     },
     "digital": {
       "title": "Paket konten dan kalender konten",
-      "brief": "Susun konten dan kalender dari data latihan. Jangan mengunggah.",
+      "brief": "Susun konten dan kalender dari data latihan. Sortir 50 profil fiktif; yang dipakai minimal 1000 follower. Jangan mengunggah.",
       "output": "grup/<kode>/drafts/02_konten_dan_kalender.md",
       "approver": "Fachrizal Imaduddin",
       "callout": "Kalender hanya dari slot available + item content bank approved. Impresi tanpa penjualan bukan bukti konversi.",

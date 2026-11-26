@@ -9,7 +9,7 @@ Soal + data latihan: soal/digital/ (hanya dibaca). Tulis hanya di grup/<kode>/ (
 Catat setiap persetujuan atau penahanan dari chat ke grup/<kode>/decisions/log-persetujuan.md: siapa, item, setuju/tahan, waktu.
 
 Contoh soal Sesi 2 (dibacakan fasilitator di awal Sesi 1): soal/digital/. Template: soal/template-sesi1.md.
-Sesi 1 — 40 menit. Contoh soal Sesi 2: paket konten dan kalender konten. Petakan prosesnya dulu, jangan langsung mengerjakan soalnya:
+Sesi 1 — 40 menit. Contoh soal Sesi 2: paket konten dan kalender konten, termasuk sortir 50 profil fiktif di mock-data/digital/influencer-screens/ (indeks mock-data/digital/influencer_profiles.csv). Yang dipakai minimal 1000 follower. Petakan prosesnya dulu, jangan langsung mengerjakan soalnya:
 1) Petakan proses (10 menit): tulis langkah kerja contoh soal dari awal sampai hasil.
 2) Pecah jadi sub-tugas (10 menit): beri peringkat tiap sub-tugas: repetitif, masif/data besar, dampak.
 3) Pilih untuk bot (5 menit): maksimal 3 sub-tugas. Minimal satu harus bagian dari contoh soal Sesi 2.

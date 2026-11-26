@@ -7,6 +7,8 @@ node_modules/
 presentation-app/node_modules/
 presentation-app/dist/
 fasilitator-only/
+mock-data/solutions/
+generated_images/
 *.pptx
 *.tgz
 *.bundle
